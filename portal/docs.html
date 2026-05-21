@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Documentation | Stock Law API</title>
+    <link rel="stylesheet" href="/portal/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lucide/0.354.0/umd/lucide.min.js"></script>
+</head>
+<body class="dark">
+    <div class="glass-background"></div>
+    <nav>
+        <div class="container">
+            <div class="logo">
+                <span class="icon">🏛️</span>
+                <span class="brand">StockLaw <span class="accent">API</span></span>
+            </div>
+            <div class="nav-links">
+                <a href="/">Trang chủ</a>
+                <a href="/portal/docs.html" class="active">Tài liệu</a>
+                <a href="/portal/getting-started.html">Bắt đầu</a>
+                <a href="/docs" target="_blank">Swagger</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container page-content">
+        <aside class="sidebar">
+            <ul>
+                <li><a href="#intro">Giới thiệu</a></li>
+                <li><a href="#auth">Xác thực</a></li>
+                <li><a href="#endpoints">Endpoints</a>
+                    <ul>
+                        <li><a href="#ask">POST /ask</a></li>
+                        <li><a href="#health">GET /health</a></li>
+                        <li><a href="#docs">GET /documents</a></li>
+                    </ul>
+                </li>
+            }
+            </ul>
+        </aside>
+
+        <div class="content">
+            <section id="intro">
+                <h1>Tài liệu API</h1>
+                <p>Chào mừng bạn đến với tài liệu hướng dẫn tích hợp StockLaw API. Dịch vụ này cho phép bạn truy vấn kiến thức pháp luật chứng khoán thông qua mô hình ngôn ngữ lớn (LLM) kết hợp với cơ sở dữ liệu pháp luật chính thống.</p>
+            </section>
+
+            <section id="auth">
+                <h2>Xác thực (Authentication)</h2>
+                <p>API sử dụng OAuth2 <strong>Client Credentials Flow</strong>. Bạn cần đăng ký thiết bị/ứng dụng để nhận <code>client_id</code> và <code>client_secret</code>.</p>
+                <div class="glass-card code-block">
+                    <div class="card-header"><span class="title">Endpoint lấy Token</span></div>
+                    <div class="card-body">
+                        <code>POST /auth/token</code>
+                    </div>
+                </div>
+            </section>
+
+            <section id="ask">
+                <h2>POST /api/v1/ask</h2>
+                <p>Truy vấn kiến thức pháp luật chứng khoán.</p>
+                <h3>Request Body</h3>
+                <div class="glass-card code-block">
+                    <pre><code>{
+  "question": "Điều kiện niêm yết cổ phiếu?",
+  "top_k": 5
+}</code></pre>
+                </div>
+                <h3>Response</h3>
+                <div class="glass-card code-block">
+                    <pre><code>{
+  "answer": "Để niêm yết cổ phiếu, doanh nghiệp cần đáp ứng...",
+  "sources": [
+    {
+      "document_name": "Luật Chứng khoán 2019",
+      "article_number": "15",
+      "similarity_score": 0.85
+    }
+  ],
+  "processing_time": 1.2
+}</code></pre>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <style>
+        .page-content { display: flex; gap: 3rem; padding: 4rem 2rem; }
+        .sidebar { width: 250px; position: sticky; top: 120px; height: fit-content; }
+        .sidebar ul { list-style: none; }
+        .sidebar a { color: var(--text-muted); text-decoration: none; padding: 0.5rem 0; display: block; }
+        .sidebar a:hover { color: var(--primary); }
+        .content { flex: 1; max-width: 800px; }
+        .content section { margin-bottom: 4rem; }
+        .code-block { margin: 1rem 0; background: #000; }
+        pre { color: #f8f8f2; overflow-x: auto; }
+    </style>
+</body>
+</html>

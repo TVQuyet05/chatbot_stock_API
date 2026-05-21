@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bắt đầu | Stock Law API</title>
+    <link rel="stylesheet" href="/portal/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lucide/0.354.0/umd/lucide.min.js"></script>
+</head>
+<body class="dark">
+    <div class="glass-background"></div>
+    <nav>
+        <div class="container">
+            <div class="logo"><span class="icon">🏛️</span><span class="brand">StockLaw <span class="accent">API</span></span></div>
+            <div class="nav-links">
+                <a href="/">Trang chủ</a>
+                <a href="/portal/docs.html">Tài liệu</a>
+                <a href="/portal/getting-started.html" class="active">Bắt đầu</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section class="guide">
+            <h1>Hướng dẫn bắt đầu</h1>
+            
+            <div class="step animate-up">
+                <div class="step-num">1</div>
+                <div class="step-text">
+                    <h3>Đăng ký Client</h3>
+                    <p>Gửi yêu cầu dến <code>/auth/register</code> để nhận credentials.</p>
+                </div>
+            </div>
+
+            <div class="step animate-up delay-1">
+                <div class="step-num">2</div>
+                <div class="step-text">
+                    <h3>Lấy Access Token</h3>
+                    <p>Sử dụng <code>client_id</code> và <code>client_secret</code> để đổi lấy JWT token.</p>
+                </div>
+            </div>
+
+            <div class="step animate-up delay-2">
+                <div class="step-num">3</div>
+                <div class="step-text">
+                    <h3>Thực hiện truy vấn</h3>
+                    <p>Sử dụng token trong header <code>Authorization: Bearer {TOKEN}</code> để gọi API.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <style>
+        .guide { max-width: 800px; margin: 4rem auto; }
+        .step { display: flex; gap: 2rem; margin-bottom: 3rem; align-items: flex-start; }
+        .step-num { 
+            background: var(--primary); 
+            color: white; 
+            width: 40px; 
+            height: 40px; 
+            border-radius: 50%; 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            font-weight: 700; 
+            flex-shrink: 0;
+        }
+    </style>
+</body>
+</html>

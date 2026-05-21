@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Law API | Tư vấn Pháp luật Chứng khoán</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/portal/css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lucide/0.354.0/umd/lucide.min.js"></script>
+</head>
+<body class="dark">
+    <div class="glass-background"></div>
+    
+    <nav>
+        <div class="container">
+            <div class="logo">
+                <span class="icon">🏛️</span>
+                <span class="brand">StockLaw <span class="accent">API</span></span>
+            </div>
+            <div class="nav-links">
+                <a href="/" class="active">Trang chủ</a>
+                <a href="/portal/docs.html">Tài liệu</a>
+                <a href="/portal/getting-started.html">Bắt đầu</a>
+                <a href="/docs" class="btn btn-outline" target="_blank">Swagger UI</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero container">
+        <div class="hero-content">
+            <h1 class="animate-up">Trí tuệ Nhân tạo Cho <br><span class="gradient-text">Pháp luật Chứng khoán</span></h1>
+            <p class="animate-up delay-1">Dịch vụ API cung cấp kiến thức pháp luật chứng khoán Việt Nam chính xác, được hỗ trợ bởi công nghệ RAG và Gemini AI.</p>
+            <div class="hero-actions animate-up delay-2">
+                <a href="/portal/getting-started.html" class="btn btn-primary">Bắt đầu ngay</a>
+                <a href="/portal/docs.html" class="btn btn-secondary">Xem API Docs</a>
+            </div>
+        </div>
+        <div class="hero-visual animate-fade">
+            <div class="glass-card main-card">
+                <div class="card-header">
+                    <span class="dot red"></span>
+                    <span class="dot yellow"></span>
+                    <span class="dot green"></span>
+                    <span class="title">query.py</span>
+                </div>
+                <div class="card-body">
+                    <pre><code><span class="keyword">import</span> requests
+
+response = requests.post(
+    <span class="string">"https://api.stocklaw.vn/api/v1/ask"</span>,
+    json={<span class="string">"question"</span>: <span class="string">"Công ty đại chúng là gì?"</span>},
+    headers={<span class="string">"Authorization"</span>: <span class="string">"Bearer {TOKEN}"</span>}
+)
+
+<span class="keyword">print</span>(response.json()[<span class="string">"answer"</span>])</code></pre>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="features container">
+        <div class="section-header">
+            <h2>Tính năng nổi bật</h2>
+        </div>
+        <div class="features-grid">
+            <div class="glass-card feature-item animate-up">
+                <i data-lucide="shield-check" class="feature-icon blue"></i>
+                <h3>Pháp lý Chính xác</h3>
+                <p>Nội dung dựa hoàn toàn trên 10+ văn bản pháp luật hiện hành như Luật Chứng khoán 2019, Luật Doanh nghiệp 2020.</p>
+            </div>
+            <div class="glass-card feature-item animate-up delay-1">
+                <i data-lucide="zap" class="feature-icon yellow"></i>
+                <h3>Công nghệ RAG</h3>
+                <p>Kết hợp Retrieval-Augmented Generation với Milvus và Gemini cho tốc độ xử lý cực nhanh và chính xác cao.</p>
+            </div>
+            <div class="glass-card feature-item animate-up delay-2">
+                <i data-lucide="key" class="feature-icon purple"></i>
+                <h3>OAuth2 Bảo mật</h3>
+                <p>Hệ thống xác thực tiêu chuẩn OAuth2 Client Credentials giúp bảo vệ tích hợp của bạn an toàn tuyệt đối.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="container">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <span>🏛️ StockLaw API</span>
+            </div>
+            <div class="footer-copyright">
+                &copy; 2026 StockLaw API Project. Built with Google Gemini.
+            </div>
+        </div>
+    </footer>
+
+    <script src="/portal/js/main.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>

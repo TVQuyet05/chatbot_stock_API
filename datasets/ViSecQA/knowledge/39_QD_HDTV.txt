@@ -1,0 +1,733 @@
+QUY CHẾ
+
+HOẠT ĐỘNG BÙ TRỪ VÀ THANH TOÁN GIAO DỊCH CHỨNG KHOÁN TẠI TỔNG CÔNG TY LƯU KÝ VÀ BÙ TRỪ CHỨNG KHOÁN VIỆT NAM
+(Ban hành kèm theo Quyết định số 39/QĐ-HĐTV ngày 29 tháng 04 năm 2025 của Hội đồng thành viên Tổng công ty Lưu ký và Bù trừ chứng khoán Việt Nam)
+
+Chương I
+QUY ĐỊNH CHUNG
+Điều 1. Phạm vi áp dụng
+Quy chế này hướng dẫn hoạt động bù trừ và thanh toán giao dịch chứng khoán bao gồm trái phiếu doanh nghiệp niêm yết (sau đây gọi tắt là trái phiếu doanh nghiệp), cổ phiếu, chứng chỉ quỹ, chứng quyền có bảo đảm theo quy định tại Chương IVa Thông tư số 119/2020/TT-BTC ngày 31/12/2020 của Bộ trưởng Bộ Tài chính quy định hoạt động đăng ký, lưu ký, bù trừ và thanh toán giao dịch chứng khoán được bổ sung tại khoản 10 Điều 1 Thông tư số 18/2025/TT-BTC ngày 26/4/2025 của Bộ trưởng Bộ Tài chính (sau đây gọi tắt là Thông tư số 119/2020/TT-BTC).
+
+Điều 2. Giải thích từ ngữ
+Trong Quy chế này, các từ ngữ dưới đây được hiểu như sau:
+
+1. Hệ thống bù trừ, thanh toán giao dịch chứng khoán (sau đây gọi tắt là hệ thống bù trừ, thanh toán) là hệ thống phần mềm ứng dụng Tổng công ty Lưu ký và Bù trừ Chứng khoán Việt Nam (VSDC) được phân quyền sử dụng để thực hiện hoạt động bù trừ, thanh toán giao dịch chứng khoán, bao gồm các hoạt động: đối chiếu, xác nhận kết quả giao dịch, xác nhận khả năng thanh toán tiền giao dịch chứng khoán, sửa lỗi sau giao dịch, xử lý lỗi giao dịch tự doanh, lùi thời hạn thanh toán, loại bỏ thanh toán giao dịch và bù trừ, xác định nghĩa vụ, thanh toán giao dịch chứng khoán.
+
+2. Ngày thanh toán là ngày chứng khoán, tiền giao dịch chứng khoán được chuyển giao đồng thời cho bên mua, bên bán chứng khoán tại VSDC và ngân hàng thanh toán (NHTT) (ngày T+1 đối với giao dịch trái phiếu doanh nghiệp; ngày T+2 đối với giao dịch cổ phiếu, chứng chỉ quỹ, chứng quyền có bảo đảm).
+
+3. Tài khoản tiền gửi thanh toán bù trừ giao dịch chứng khoán là tài khoản tiền mà thành viên lưu ký (TVLK), Tổ chức mở tài khoản trực tiếp (TCMTKTT) mở tại NHTT để thanh toán tiền cho các giao dịch chứng khoán đã được xác lập trên hệ thống giao dịch của Sở giao dịch chứng khoán (SGDCK). Tài khoản tiền gửi này của TVLK được mở tách biệt theo tài khoản của khách hàng trong nước, tài khoản của khách hàng nước ngoài, tài khoản của chính TVLK.
+
+4. Khu vực thị trường bao gồm: khu vực thị trường trái phiếu doanh nghiệp; khu vực thị trường cổ phiếu, chứng chỉ quỹ, chứng quyền có bảo đảm.
+
+5. Chữ ký số là một dạng chữ ký điện tử theo quy định pháp luật về giao dịch điện tử mà người có thẩm quyền của VSDC, TVLK, NHTT, TCMTKTT sử dụng để xác thực thông tin dữ liệu mà mình gửi đi.
+
+6. Chứng từ điện tử là thông tin về hoạt động nghiệp vụ tại VSDC được tạo ra, gửi đi, nhận và lưu trữ bằng phương tiện điện tử theo quy định pháp luật về giao dịch điện tử trong hoạt động tài chính thông qua cổng giao tiếp điện tử hoặc cổng giao tiếp trực tuyến hoặc thông qua mạng toàn cầu bằng giao diện trên trang thông tin điện tử của VSDC và đã được xác thực bằng chữ ký số của người có thẩm quyền của VSDC, TVLK, NHTT, TCMTKTT. Chứng từ điện tử trong Quy chế này bao gồm các loại sau:
+
+a) Báo cáo điện tử và giao dịch điện tử: là các báo cáo, giao dịch được tạo ra và thực hiện trên hệ thống bù trừ, thanh toán thông qua cổng giao tiếp điện tử của VSDC;
+
+b) Điện nghiệp vụ (điện MT, FileAct): là file dữ liệu chứa các thông tin về giao dịch nghiệp vụ có cấu trúc theo chuẩn ISO 15022 để trao đổi trực tiếp giữa hệ thống nghiệp vụ của TVLK, TCMTKTT với hệ thống bù trừ, thanh toán được xác thực bằng chữ ký số của người có thẩm quyền của VSDC hoặc TVLK, TCMTKTT và được coi là chứng từ điện tử. Chuẩn điện nghiệp vụ được quy định chi tiết tại quy định hướng dẫn kết nối cổng giao tiếp trực tuyến.
+
+7. Cổng giao tiếp điện tử là môi trường phần mềm ứng dụng WebUI cho hệ thống bù trừ, thanh toán để thực hiện các nghiệp vụ giữa TVLK, TCMTKTT, NHTT và VSDC, được thực hiện thông qua các máy trạm đặt tại trụ sở chính và chi nhánh của TVLK, TCMTKTT, NHTT. Tài liệu hướng dẫn sử dụng các phần mềm ứng dụng này được VSDC đăng tải trên trang thông tin điện tử của VSDC.
+
+8. Cổng giao tiếp trực tuyến là môi trường phần mềm ứng dụng trong đó cho phép các TVLK, TCMTKTT và VSDC trao đổi các thông tin hoạt động nghiệp vụ dưới dạng điện MT, điện xác nhận trực tiếp giữa hệ thống nghiệp vụ của TVLK, TCMTKTT và hệ thống bù trừ, thanh toán.
+
+9. Nhà đầu tư nước ngoài là tổ chức thực hiện giao dịch mua cổ phiếu không yêu cầu có đủ tiền khi đặt lệnh (sau đây gọi tắt là NĐTNPR) là nhà đầu tư được thực hiện giao dịch theo quy định tại Điều 9a Thông tư số 120/2020/TT-BTC ngày 31/12/2020 của Bộ trưởng Bộ Tài chính quy định giao dịch cổ phiếu niêm yết, đăng ký giao dịch và chứng chỉ quỹ, trái phiếu doanh nghiệp, chứng quyền có bảo đảm niêm yết trên hệ thống giao dịch chứng khoán được bổ sung tại khoản 2 Điều 1 Thông tư số 68/2024/TT-BTC ngày 18/9/2024 của Bộ trưởng Bộ Tài chính sửa đổi, bổ sung một số điều của các thông tư quy định về giao dịch chứng khoán trên hệ thống giao dịch chứng khoán; bù trừ và thanh toán giao dịch chứng khoán; hoạt động của công ty chứng khoán và công bố thông tin trên thị trường chứng khoán.
+
+Điều 3. Nguyên tắc chung
+1. TVLK, TCMTKTT, NHTT gửi hồ sơ, tài liệu liên quan đến xác nhận khả năng thanh toán tiền, phong tỏa tiền, sửa lỗi, xử lý lỗi, lùi thời hạn thanh toán, loại bỏ thanh toán giao dịch chứng khoán đến VSDC bằng hình thức nộp trực tiếp hoặc văn bản điện tử đã ký số doanh nghiệp (trên file có định dạng PDF) từ email đã đăng ký với VSDC đến email phongttbtck@vsd.vn, phongttbtvsdc@gmail.com. Trường hợp nộp hồ sơ, tài liệu trực tiếp, TVLK, TCMTKTT, NHTT có thể gửi VSDC bằng bản fax hoặc bản scan vào email nêu trên của VSDC từ email đã đăng ký với VSDC trước và có trách nhiệm gửi bản chính cho VSDC trong thời hạn 03 ngày làm việc liền kề sau đó.
+
+2. TVLK, TCMTKTT có trách nhiệm đăng ký thông tin tài khoản lưu ký chứng khoán của mình và của nhà đầu tư trên khu vực thị trường trước khi thực hiện lệnh giao dịch. Việc hủy đăng ký thông tin tài khoản lưu ký chứng khoán trên khu vực thị trường chỉ được thực hiện sau khi giao dịch chứng khoán phát sinh trên tài khoản (nếu có) đã được hoàn tất thanh toán. Quy trình đăng ký, hủy đăng ký thông tin tài khoản lưu ký chứng khoán trên khu vực thị trường thực hiện theo quy định tại Phụ lục 01 kèm theo Quy chế này.
+
+3. Phương thức, thời gian, trình tự, thủ tục bù trừ và thanh toán giao dịch chứng khoán thực hiện theo quy định tại Phụ lục 03 kèm theo Quy chế này.
+
+4. Các hồ sơ, tài liệu liên quan đến hoạt động bù trừ, thanh toán giao dịch chứng khoán thực hiện theo Phụ lục 05 kèm theo Quy chế.
+
+5. Tùy theo mức độ vi phạm, TVLK, TCMTKTT vi phạm quy định tại Quy chế này bị xử lý theo quy định tại Quy chế TVLK (đối với TVLK) hoặc hợp đồng, thỏa thuận cung cấp dịch vụ giữa VSDC và TCMTKTT (đối với TCMTKTT).
+
+Điều 4. Chứng từ liên quan đến hoạt động bù trừ, thanh toán giao dịch chứng khoán
+1. Các chứng từ liên quan đến hoạt động bù trừ, thanh toán giao dịch chứng khoán áp dụng dưới dạng chứng từ điện tử được gửi qua cổng giao tiếp điện tử, cổng giao tiếp trực tuyến. Danh mục chứng từ thanh toán gửi qua cổng giao tiếp trực tuyến (FileAct) được quy định chi tiết tại Phụ lục 02 kèm theo Quy chế này. Trong trường hợp cần thiết, VSDC, TVLK, TCMTKTT, NHTT có thể đề nghị chuyển đổi chứng từ dưới dạng chứng từ điện tử sang chứng từ giấy theo quy định của pháp luật về giao dịch điện tử trong hoạt động tài chính.
+
+Các chứng từ điện tử của VSDC khi chuyển đổi sang chứng từ giấy sẽ được đóng dấu có ký hiệu như sau:
+
+
+TỔNG CÔNG TY LƯU KÝ
+
+VÀ BÙ TRỪ CHỨNG KHOÁN VIỆT NAM
+
+
+
+CHỨNG TỪ CHUYỂN ĐỔI TỪ
+
+CHỨNG TỪ ĐIỆN TỬ
+
+
+Họ và tên:
+
+Chữ ký:
+
+Thời gian thực hiện chuyển đổi:
+
+
+2. Trường hợp TVLK, TCMTKTT, NHTT không thể gửi, nhận các chứng từ điện tử qua cổng giao tiếp điện tử, cổng giao tiếp trực tuyến với VSDC theo quy định tại Quy chế này do sự cố kỹ thuật hoặc nguyên nhân bất khả kháng khác thì việc gửi, nhận các chứng từ thực hiện theo hình thức quy định tại khoản 1 Điều 3 Quy chế này.
+
+Chương II
+BÙ TRỪ, THANH TOÁN GIAO DỊCH CHỨNG KHOÁN
+
+Điều 5. Đối chiếu, xác nhận kết quả giao dịch
+1. Sau khi nhận dữ liệu về kết quả giao dịch từ SGDCK, VSDC gửi thông báo cho TVLK, TCMTKTT; xác định nghĩa vụ thanh toán giao dịch chứng khoán tạm tính và thông báo cho TVLK, TCMTKTT theo quy định tại khoản 1 Điều 40c Thông tư số 119/2020/TT-BTC.
+
+2. TVLK, TCMTKTT có trách nhiệm đối chiếu chi tiết giao dịch giữa thông tin lệnh giao dịch được lưu giữ tại TVLK, TCMTKTT với thông báo của VSDC theo quy định tại khoản 1 Điều này:
+
+a) Trường hợp có thông tin giao dịch sai, TVLK, TCMTKTT thông báo và gửi VSDC hồ sơ đề nghị sửa lỗi, xử lý lỗi theo quy định tại Điều 8, Điều 9 Quy chế này.
+
+b) Trường hợp không nhận được thông báo về thông tin giao dịch sai, hồ sơ đề nghị sửa lỗi, xử lý lỗi của TVLK, TCMTKTT, VSDC coi các thông tin đã thông báo là chính xác. TVLK, TCMTKTT phải chịu trách nhiệm về các sai sót, tổn thất phát sinh (nếu có).
+
+Điều 6. Xác nhận khả năng thanh toán tiền và phong tỏa tiền đảm bảo khả năng thanh toán giao dịch trái phiếu doanh nghiệp
+1. Chậm nhất 15h15 ngày T, VSDC thông báo nghĩa vụ thanh toán giao dịch chứng khoán tạm tính cho NHTT theo phương thức quy định tại Biên bản phối hợp hoạt động giữa VSDC và NHTT.
+
+2. TVLK, TCMTKTT có trách nhiệm xác nhận với VSDC về việc có đủ tiền hoặc không có đủ tiền để thanh toán giao dịch trái phiếu doanh nghiệp theo quy định tại khoản 1 Điều 40d Thông tư số 119/2020/TT-BTC.
+
+2.1. Trường hợp TVLK, TCMTKTT có đủ tiền thanh toán theo quy định tại khoản 2 Điều 40d Thông tư số 119/2020/TT-BTC:
+
+a) Chậm nhất 15h30 ngày T:
+
+- Ngân hàng lưu ký (NHLK) hoàn tất phong tỏa tiền tại NHLK và gửi VSDC điện xác nhận đã có đủ tiền. Điện xác nhận đã có đủ tiền của NHLK trong trường hợp này đồng thời là xác nhận của NHLK về việc đã hoàn tất phong tỏa đủ tiền tại NHLK;
+
+- CTCK, TCMTKTT phải có đủ tiền trên tài khoản tiền gửi thanh toán bù trừ giao dịch chứng khoán tại NHTT và gửi VSDC điện xác nhận đủ tiền.
+
+b) Chậm nhất 15h45 ngày T: NHTT thực hiện kiểm tra, phong tỏa tiền và gửi VSDC xác nhận đã phong tỏa đủ tiền trên tài khoản tiền gửi thanh toán bù trừ giao dịch chứng khoán của CTCK, TCMTKTT.
+
+2.2. Trường hợp TVLK, TCMTKTT không có đủ tiền thanh toán theo quy định tại khoản 3 Điều 40d Thông tư số 119/2020/TT-BTC:
+
+a) Chậm nhất 15h30 ngày T:
+
+- NHLK hoàn tất phong tỏa số tiền đã có tại NHLK, gửi VSDC thông tin chi tiết số tiền đã phong tỏa, thông tin giao dịch thiếu tiền để VSDC loại bỏ thanh toán đồng thời gửi điện xác nhận không có đủ tiền.
+
+- CTCK, TCMTKTT gửi VSDC thông tin chi tiết giao dịch thiếu tiền để VSDC loại bỏ thanh toán đồng thời gửi điện xác nhận không có đủ tiền.
+
+b) Chậm nhất 15h45 ngày T: NHTT thực hiện kiểm tra, phong tỏa số tiền đã có trên tài khoản tiền gửi thanh toán bù trừ giao dịch chứng khoán của CTCK, TCMTKTT đồng thời gửi VSDC xác nhận về số tiền đã phong tỏa, số tiền còn thiếu.
+
+c) Chậm nhất 16h00 ngày T, VSDC thực hiện:
+
+- Loại bỏ thanh toán giao dịch thiếu tiền theo thông báo của TVLK, TCMTKTT hoặc loại bỏ thanh toán các giao dịch mua trái phiếu doanh nghiệp do VSDC tự xác định theo quy định tại khoản 3 Điều 40d Thông tư số 119/2020/TT-BTC và Điều 17 Quy chế này;
+
+- Xác định lại nghĩa vụ thanh toán và thông báo cho TVLK, TCMTKTT liên quan để TVLK, TCMTKTT có nghĩa vụ phải trả tăng lên hoặc từ được nhận thành phải trả thực hiện việc phong tỏa tiền theo quy định tại khoản 5 Điều 40d Thông tư số 119/2020/TT-BTC.
+
+Điều 7. Xác nhận khả năng thanh toán tiền và phong tỏa tiền đảm bảo khả năng thanh toán giao dịch cổ phiếu, chứng chỉ quỹ, chứng quyền có bảo đảm
+1. Chậm nhất 15h00 ngày T+1, VSDC thông báo nghĩa vụ thanh toán giao dịch chứng khoán tạm tính cho NHTT theo phương thức quy định tại Biên bản phối hợp hoạt động giữa VSDC và NHTT.
+
+2. TVLK, TCMTKTT có trách nhiệm xác nhận với VSDC về việc có đủ tiền hoặc không có đủ tiền để thanh toán giao dịch cổ phiếu, chứng chỉ quỹ, chứng quyền có bảo đảm theo quy định tại khoản 1 Điều 40d Thông tư số 119/2020/TT-BTC.
+
+2.1. Trường hợp TVLK, TCMTKTT có đủ tiền thanh toán theo quy định tại khoản 2 Điều 40d Thông tư số 119/2020/TT-BTC:
+
+a) Chậm nhất 15h00 ngày T+1:
+
+- NHLK hoàn tất phong tỏa tiền tại NHLK và gửi VSDC điện xác nhận đã có đủ tiền. Điện xác nhận đã có đủ tiền của NHLK trong trường hợp này đồng thời là xác nhận của NHLK về việc đã hoàn tất phong tỏa đủ tiền tại NHLK;
+
+- CTCK, TCMTKTT phải có đủ tiền trên tài khoản tiền gửi thanh toán bù trừ giao dịch chứng khoán tại NHTT và gửi VSDC điện xác nhận đủ tiền.
+
+b) Chậm nhất 15h15 ngày T+1: NHTT thực hiện kiểm tra, phong tỏa tiền và gửi VSDC xác nhận đã phong tỏa đủ tiền trên tài khoản tiền gửi thanh toán bù trừ giao dịch chứng khoán của CTCK, TCMTKTT.
+
+2.2. Trường hợp TVLK, TCMTKTT xác nhận không có đủ tiền thanh toán theo quy định tại khoản 3 Điều 40d Thông tư số 119/2020/TT-BTC:
+
+a) Chậm nhất 15h00 ngày T+1:
+
+- NHLK thực hiện:
+
++ Hoàn tất phong tỏa số tiền đã có tại NHLK, gửi VSDC thông tin chi tiết số tiền đã phong tỏa, thông tin giao dịch thiếu tiền không phải là giao dịch của NĐTNPR để VSDC loại bỏ thanh toán đồng thời gửi điện xác nhận không có đủ tiền;
+
++ Thông báo cho CTCK nơi NĐTNPR đặt lệnh, VSDC thông tin chi tiết giao dịch thiếu tiền là giao dịch của NĐTNPR (nếu có) trong cùng 01 email. Thông báo của NHLK phải có các thông tin về mã bảng giao dịch, số hiệu tài khoản, số hiệu lệnh, số xác nhận, mã cổ phiếu, số lượng, giá khớp lệnh, giá trị, tổng số tiền đã phong tỏa tại NHLK, tổng số tiền CTCK còn phải phong tỏa.
+
+- CTCK, TCMTKTT gửi VSDC thông tin chi tiết giao dịch thiếu tiền thanh toán để VSDC loại bỏ thanh toán theo quy định tại các khoản 3, 4 Điều 40d Thông tư 119/2020/TT-BTC đồng thời gửi điện xác nhận không có đủ tiền.
+
+b) Chậm nhất 15h15 ngày T+1:
+
+- NHTT thực hiện kiểm tra, phong tỏa số tiền đã có trên tài khoản tiền gửi thanh toán bù trừ giao dịch chứng khoán của CTCK, TCMTKTT và gửi VSDC thông tin CTCK, TCMTKTT thiếu tiền phong tỏa, số tiền còn thiếu của từng CTCK, TCMTKTT (lần 1).
+
+- Căn cứ thông báo của NHLK tại điểm a khoản 2.2 Điều này, VSDC chuyển NHTT thông tin số tiền thiếu của NĐTNPR mở tài khoản lưu ký tại NHLK. NHTT phối hợp với CTCK phong tỏa số tiền đảm bảo thanh toán cho NĐTNPR đồng thời gửi VSDC xác nhận số tiền đã phong tỏa, số tiền còn thiếu (nếu có).
+
+c) Chậm nhất 15h30 ngày T+1: CTCK nơi NĐTNPR đặt lệnh phải có đủ tiền trên tài khoản tiền gửi của CTCK tại NHTT.
+
+d) Chậm nhất 15h45 ngày T+1: NHTT tiếp tục kiểm tra, thực hiện phong tỏa tiền và gửi VSDC thông tin CTCK, TCMTKTT thiếu tiền phong tỏa, số tiền còn thiếu của từng CTCK, TCMTKTT (lần 2).
+
+đ) Chậm nhất 16h00 ngày T+1, VSDC thực hiện:
+
+- Loại bỏ thanh toán giao dịch thiếu tiền theo thông báo của TVLK, TCMTKTT hoặc loại bỏ thanh toán các giao dịch mua cổ phiếu, chứng chỉ quỹ, chứng quyền có bảo đảm do VSDC tự xác định theo quy định tại khoản 3, 4 Điều 40d Thông tư số 119/2020/TT-BTC và Điều 17 Quy chế này;
+
+- Xác định lại nghĩa vụ thanh toán và thông báo cho TVLK, TCMTKTT liên quan để TVLK, TCMTKTT có nghĩa vụ phải trả tăng lên hoặc từ được nhận thành phải trả thực hiện việc phong tỏa tiền theo quy định tại khoản 5 Điều 40d Thông tư số 119/2020/TT-BTC.
+
+Điều 8. Sửa lỗi sau giao dịch
+1. VSDC thực hiện sửa lỗi sau giao dịch theo quy định tại Điều 40đ Thông tư số 119/2020/TT-BTC như sau:
+
+a) VSDC thực hiện sửa lỗi căn cứ vào hồ sơ đề nghị của các bên liên quan đối với các trường hợp quy định tại các điểm a, b, c khoản 1 Điều 40đ Thông tư 119/2020/TT-BTC.
+
+b) VSDC tự động sửa lỗi (không yêu cầu hồ sơ) đối với trường hợp quy định tại các điểm d, đ khoản 1 Điều 40đ Thông tư 119/2020/TT-BTC mà không cần yêu cầu của TVLK:
+
+- Trong ngày giao dịch đối với giao dịch của nhà đầu tư có thông tin tài khoản lưu ký chưa được đăng ký khu vực thị trường.
+
+- Tại thời điểm VSDC kiểm tra nghĩa vụ thanh toán để thực hiện chuyển chứng khoán sang tài khoản chờ thanh toán phát sinh trường hợp thiếu chứng khoán, VSDC thực hiện sửa lỗi theo nguyên tắc chuyển các giao dịch của nhà đầu tư thiếu chứng khoán lần lượt theo thứ tự từ giao dịch có thời gian xác lập muộn nhất cho đến khi tổng số lượng chứng khoán chuyển bằng số lượng chứng khoán thiếu của nhà đầu tư.
+
+2. Việc sửa lỗi được thực hiện đối với toàn bộ lệnh giao dịch bị đặt sai. Trường hợp lệnh đặt sai số lượng chứng khoán của TVLK có các giao dịch được xác lập với số lượng bằng hoặc nhỏ hơn so với lệnh đặt của khách hàng, VSDC thực hiện sửa lỗi một phần (theo số xác nhận giao dịch) theo đề nghị của thành viên.
+
+3. Hồ sơ sửa lỗi theo quy định tại điểm a khoản 1 Điều này gồm:
+
+a) Giấy đề nghị sửa lỗi sau giao dịch;
+
+b) Xác nhận kết quả giao dịch.
+
+4. Thời hạn gửi hồ sơ sửa lỗi quy định tại khoản 3 Điều này:
+
+a) Đối với giao dịch trái phiếu doanh nghiệp: Chậm nhất vào 15h30 ngày T;
+
+b) Đối với giao dịch cổ phiếu, chứng chỉ quỹ, chứng quyền có bảo đảm: Chậm nhất vào 14h30 ngày T+1.
+
+c) VSDC không thực hiện sửa lỗi đối với các hồ sơ không hợp lệ hoặc gửi đến VSDC không đúng thời hạn theo quy định tại các điểm a, b khoản này. TVLK phải chịu hoàn toàn trách nhiệm đối với mọi tổn thất phát sinh từ lỗi của mình (nếu có).
+
+5. Sau khi hoàn tất sửa lỗi, VSDC gửi Thông báo sửa lỗi cho TVLK, SGDCK liên quan.
+
+Điều 9. Xử lý lỗi giao dịch tự doanh
+1. VSDC thực hiện xử lý lỗi giao dịch tự doanh theo quy định tại Điều 40e Thông tư số 119/2020/TT-BTC.
+
+2. CTCK, thành viên lập quỹ ETF có lỗi giao dịch tự doanh phải gửi Giấy đề nghị xử lý lỗi giao dịch tự doanh cho VSDC.
+
+3. Thời hạn gửi Giấy đề nghị xử lý lỗi giao dịch tự doanh:
+
+a) Đối với giao dịch trái phiếu doanh nghiệp: Chậm nhất vào 15h30 ngày T;
+
+b) Đối với giao dịch cổ phiếu, chứng chỉ quỹ, chứng quyền có bảo đảm: Chậm nhất 14h30 ngày T+1.
+
+4. Sau khi hoàn tất xử lý lỗi, VSDC gửi Thông báo xử lý lỗi cho CTCK, thành viên lập quỹ ETF, SGDCK liên quan.
+
+Điều 10. Xử lý để thanh toán thay cho giao dịch của NĐTNPR theo quy định tại điểm b khoản 2 Điều 40k Thông tư số 119/2020/TT-BTC
+1. Chậm nhất 09h30 ngày thanh toán (T+2), trường hợp NĐTNPR không có đủ tiền thanh toán, NHLK gửi thông báo đề nghị CTCK để CTCK sử dụng tiền của mình chuyển về tài khoản tiền gửi thanh toán bù trừ giao dịch chứng khoán môi giới nước ngoài của NHLK tại NHTT để thanh toán thay cho NĐTNPR, đồng thời gửi thông báo cho VSDC trong cùng 01 email gửi cho CTCK. Nội dung thông báo phải có thông tin về giao dịch thiếu tiền (mã bảng giao dịch, số hiệu tài khoản, số hiệu lệnh, số xác nhận, mã cổ phiếu, số lượng cổ phiếu khớp lệnh, giá khớp lệnh, giá trị giao dịch, tổng sổ tiền đã phong tỏa tại NHLK, tổng số tiền CTCK còn phải phong tỏa) của NĐTNPR (nếu có), thông tin số tài khoản tiền gửi thanh toán bù trừ giao dịch chứng khoán môi giới nước ngoài của NHLK tại NHTT.
+
+2. Chậm nhất 09h45 ngày thanh toán (T+2):
+
+- Trên cơ sở thông báo của NHLK quy định tại khoản 1 Điều này, VSDC chuyển NHTT thông tin số tiền thiếu mà NHLK đề nghị CTCK thanh toán thay NĐTNPR mở tài khoản lưu ký tại NHLK;
+
+- CTCK thông báo và phối hợp với NHTT sử dụng tiền của mình (bao gồm cả số tiền đã phong tỏa nếu có) chuyển về tài khoản tiền gửi thanh toán bù trừ giao dịch chứng khoán môi giới nước ngoài của NHLK để thanh toán cho giao dịch của NĐTNPR theo quy định tại điểm b khoản 3 Điều 40d Thông tư số 119/2020/TT-BTC.
+
+3. Chậm nhất 10h15 ngày thanh toán: CTCK, NHTT phải hoàn tất việc chuyển tiền sang tài khoản tiền gửi thanh toán bù trừ giao dịch chứng khoán môi giới nước ngoài của NHLK tại NHTT theo yêu cầu của NHLK. NHTT gửi VSDC xác nhận đã hoàn tất chuyển tiền cho NHLK theo phương thức quy định tại Biên bản phối hợp hoạt động giữa VSDC và NHTT.
+
+4. NHTT chỉ thực hiện giải tỏa số tiền đã phong tỏa còn lại (nếu có) của CTCK sau khi đã hoàn tất việc chuyển tiền của CTCK sang tài khoản tiền gửi thanh toán bù trừ môi giới nước ngoài của NHLK tại NHTT và toàn bộ giao dịch cổ phiếu, chứng chỉ quỹ, chứng quyền có bảo đảm của ngày hôm đó đã được hoàn tất thanh toán.
+
+5. Trường hợp NHLK thông báo cho CTCK đúng thời hạn quy định tại khoản 1 Điều này nhưng CTCK không hoàn tất việc chuyển tiền sang tài khoản thanh toán bù trừ của NHLK tại NHTT theo quy định tại khoản 3 Điều này, CTCK bị coi là mất khả năng thanh toán tiền giao dịch chứng khoán. Trường hợp NHLK không thông báo cho CTCK đúng thời hạn quy định tại khoản 1 Điều này dẫn đến CTCK không hoàn tất việc chuyển tiền sang tài khoản thanh toán bù trừ của NHLK tại NHTT theo quy định tại khoản 3 Điều này, NHLK bị coi là mất khả năng thanh toán tiền giao dịch chứng khoán. VSDC được sử dụng quỹ hỗ trợ thanh toán để hỗ trợ thanh toán theo quy định tại Điều 40l Thông tư số 119/2020/TT-BTC và Điều 13 Quy chế này.
+
+6. NHLK, CTCK bị xử lý vi phạm theo Quy chế TVLK của VSDC trong trường hợp sau:
+
+a) NHLK không thông báo cho CTCK đúng thời hạn quy định tại khoản 1 Điều này;
+
+b) CTCK không thông báo cho NHTT đúng thời hạn quy định tại khoản 2 Điều này, không hoàn tất việc chuyển tiền sang tài khoản tiền gửi thanh toán bù trừ môi giới nước ngoài của NHLK tại NHTT trong thời hạn quy định tại khoản 3 Điều này.
+
+Điều 11. Các trường hợp mất khả năng thanh toán giao dịch chứng khoán
+1. Các trường hợp mất khả năng thanh toán tiền bao gồm:
+
+a) TVLK mất khả năng thanh toán theo quy định tại khoản 5 Điều 10 Quy chế này.
+
+b) Thời điểm 10h30 ngày thanh toán, TVLK không có đủ tiền trên tài khoản tiền gửi thanh toán bù trừ giao dịch chứng khoán của TVLK tại NHTT để chuẩn bị thực hiện thanh toán.
+
+2. Các trường hợp mất khả năng thanh toán chứng khoán bao gồm: TVLK mất khả năng thanh toán chứng khoán xác định theo quy định tại khoản 6 Điều 40đ và khoản 2 Điều 40e Thông tư số 119/2020/TT-BTC.
+
+Điều 12. Xác nhận hoàn tất thanh toán giao dịch chứng khoán
+1. Sau khi hoàn tất thanh toán giao dịch chứng khoán, VSDC gửi xác nhận hoàn tất thanh toán giao dịch chứng khoán cho TVLK, TCMTKTT.
+
+2. TVLK phải thực hiện phân bổ tiền và chứng khoán cho khách hàng ngay sau khi VSDC hoàn tất thanh toán chứng khoán và NHTT hoàn tất thanh toán tiền, đảm bảo hoàn tất việc phân bổ trước 13h00 ngày thanh toán; đồng thời thông báo cho VSDC về kết quả thực hiện chậm nhất vào 16h30 ngày thanh toán.
+
+Chương III
+HỖ TRỢ XỬ LÝ MẤT KHẢ NĂNG THANH TOÁN
+
+Điều 13. Hỗ trợ xử lý mất khả năng thanh toán tiền giao dịch chứng khoán
+1. Đối với trường hợp sử dụng tiền vay từ Quỹ hỗ trợ thanh toán:
+
+a) NHTT căn cứ vào công văn đề nghị hỗ trợ thanh toán tiền của VSDC thực hiện chuyển tiền từ tài khoản Quỹ hỗ trợ thanh toán sang tài khoản tiền gửi thanh toán bù trừ giao dịch chứng khoán của TVLK mất khả năng thanh toán. Trường hợp TVLK mất khả năng thanh toán là CTCK theo quy định tại khoản 5 Điều 10 quy chế này, NHTT tiếp tục chuyển số tiền này từ tài khoản tiền gửi thanh toán bù trừ giao dịch chứng khoán của CTCK sang tài khoản tiền gửi thanh toán bù trừ giao dịch chứng khoán của NHLK nơi NĐTNPR mở tài khoản để CTCK thực hiện thanh toán thay.
+
+b) VSDC gửi TVLK mất khả năng thanh toán Thông báo sử dụng Quỹ Hỗ trợ thanh toán. Việc thanh toán tiếp theo thực hiện theo Phụ lục 03 kèm theo Quy chế này.
+
+c) TVLK mất khả năng thanh toán sử dụng tiền từ Quỹ hỗ trợ thanh toán phải hoàn trả số tiền sử dụng, lãi sử dụng theo quy định tại Điều 40l Thông tư số 119/2020/TT-BTC và Quy chế quản lý và sử dụng quỹ hỗ trợ thanh toán của VSDC.
+
+2. Đối với trường hợp sử dụng tiền vay từ NHTT:
+
+a) NHTT gửi VSDC văn bản thông báo về việc NHTT cho TVLK mất khả năng thanh toán vay để hỗ trợ thanh toán.
+
+b) VSDC gửi NHTT thông tin tài khoản tiền gửi thanh toán bù trừ giao dịch chứng khoán của TVLK để NHTT chuyển tiền cho vay hỗ trợ thanh toán.
+
+c) Việc thanh toán tiếp theo thực hiện theo thời gian, trình tự quy định tại Phụ lục 03 kèm theo Quy chế này.
+
+d) VSDC thực hiện phong toả, giải tỏa, chuyển quyền sở hữu chứng khoán theo yêu cầu của NHTT theo Phụ lục 04 kèm theo Quy chế này.
+
+Điều 14. Hỗ trợ xử lý mất khả năng thanh toán chứng khoán
+1. TVLK mất khả năng thanh toán chứng khoán phải hoàn tất việc vay chứng khoán theo quy định tại điểm a khoản 3 Điều 40g Thông tư số 119/2020/TT-BTC trước 09h00 ngày thanh toán.
+
+2. Sau thời hạn nêu tại khoản 1 Điều này, VSDC thực hiện xác định các giao dịch thiếu chứng khoán theo quy định tại Điều 15 Quy chế này để lùi thời hạn thanh toán hoặc loại bỏ thanh toán theo quy định tại các Điều 40h, 40i Thông tư số 119/2020/TT-BTC và các Điều 16, 17 Quy chế này.
+
+Điều 15. Xác định giao dịch thiếu chứng khoán
+1. Tại ngày thanh toán, để xác định giao dịch thiếu chứng khoán, VSDC thực hiện kiểm tra, đối chiếu giữa số dư chứng khoán trên tài khoản tự doanh của TVLK và số lượng chứng khoán cần thanh toán xác định số lượng chứng khoán thiếu, thông báo cho TVLK xác định tài khoản mua đối ứng để ghép cặp.
+
+2. Giá trị của giao dịch thiếu chứng khoán được xác định dựa trên giá đóng cửa của chứng khoán đó tại ngày giao dịch liền trước ngày thanh toán.
+
+3. Chậm nhất 10h00 ngày thanh toán, TVLK thiếu chứng khoán xác định, gửi VSDC văn bản thông báo về tài khoản mua đối ứng để ghép cặp với tài khoản thiếu chứng khoán. Trường hợp VSDC không nhận được thông báo của TVLK trong thời hạn này, VSDC tự động xác định tài khoản mua đối ứng theo nguyên tắc và trình tự sau:
+
+a) Lựa chọn tài khoản nhà đầu tư mở tại TVLK thiếu chứng khoán đáp ứng các tiêu chí sau:
+
+- Tài khoản có số lượng chứng khoán mua thuần (sau khi bù trừ) bằng hoặc lớn hơn số lượng chứng khoán thiếu. Trường hợp có từ 02 tài khoản trở lên đáp ứng tiêu chí này thì lựa chọn tài khoản có giao dịch mua được xác lập sau;
+
+- Trường hợp tất cả các tài khoản mua đều có số lượng chứng khoán mua thuần nhỏ hơn số lượng chứng khoán thiếu thì lựa chọn tài khoản mua đối ứng có số lượng chứng khoán mua thuần theo thứ tự lần lượt từ lớn đến bé cho đến khi tổng số lượng chứng khoán mua thuần đối ứng bằng số lượng chứng khoán thiếu.
+
+b) Lựa chọn tài khoản tự doanh của TVLK khác (ngoại trừ thành viên lập quỹ có thực hiện giao dịch hoán đổi ETF hoặc chứng khoán cơ cấu) đáp ứng các tiêu chí sau:
+
+- Tài khoản của TVLK có số lượng mua thuần bằng hoặc lớn hơn số lượng chứng khoán thiếu. Trường hợp có từ 02 tài khoản trở lên đáp ứng tiêu chí này thì lựa chọn tài khoản có giao dịch mua được xác lập sau;
+
+- Trường hợp tất cả các tài khoản tự doanh TVLK mua đều có số lượng chứng khoán mua thuần nhỏ hơn số lượng chứng khoán thiếu thì lựa chọn tài khoản mua đối ứng có số lượng chứng khoán mua thuần theo thứ tự lần lượt từ lớn đến bé cho đến khi tổng số lượng chứng khoán mua thuần đối ứng bằng số lượng chứng khoán còn thiếu.
+
+- Trường hợp sau khi chọn tất cả tài khoản tự doanh của các TVLK mua mà tổng số lượng chứng khoán mua thuần trên các tài khoản này vẫn nhỏ hơn số lượng chứng khoán còn thiếu thì lựa chọn thêm tài khoản khách hàng của TVLK khác theo nguyên tắc quy định tại điểm c khoản này.
+
+c) Lựa chọn tài khoản đối ứng là khách hàng của TVLK khác:
+
+- Tài khoản có số lượng chứng khoán mua thuần (sau khi bù trừ) bằng hoặc lớn hơn số lượng chứng khoán còn thiếu. Trường hợp có từ 02 tài khoản trở lên đáp ứng tiêu chí này thì lựa chọn tài khoản có giao dịch mua được xác lập sau;
+
+- Trường hợp tất các tài khoản mua đều có số lượng chứng khoán mua thuần nhỏ hơn số lượng chứng khoán còn thiếu thì lựa chọn tài khoản mua đối ứng theo thứ tự lần lượt từ lớn đến bé cho đến khi tổng số lượng chứng khoán mua thuần đối ứng bằng số lượng chứng khoán còn thiếu.
+
+Điều 16. Lùi thời hạn thanh toán
+1. VSDC thực hiện lùi thời hạn thanh toán đối với giao dịch thiếu chứng khoán theo nguyên tắc quy định tại khoản 3 Điều 40h Thông tư số 119/2020/TT-BTC.
+
+2. Giao dịch lùi thời hạn thanh toán có thể được thanh toán toàn bộ hoặc từng phần tuỳ vào số lượng chứng khoán TVLK vay được. Thời điểm xác định giao dịch lùi thời hạn được thanh toán là chậm nhất 10h30 ngày thanh toán.
+
+3. Sau khi hoàn tất lùi thời hạn thanh toán, VSDC gửi Thông báo cho TVLK, SGDCK có liên quan.
+
+4. Thời gian, trình tự thực hiện lùi thời hạn thanh toán quy định tại Phụ lục 03 kèm theo Quy chế này.
+
+Điều 17. Loại bỏ thanh toán giao dịch chứng khoán
+1. VSDC thực hiện loại bỏ thanh toán giao dịch chứng khoán theo quy định tại Điều 40i Thông tư số 119/2020/TT-BTC.
+
+2. Thời gian loại bỏ thanh toán giao dịch:
+
+a) Chậm nhất 15h30 ngày giao dịch đối với các trường hợp quy định tại điểm d, đ, e, g khoản 1 Điều 40i Thông tư số 119/2020/TT-BTC.
+
+b) Chậm nhất 16h00 ngày giao dịch đối với giao dịch trái phiếu doanh nghiệp và 16h00 ngày T+1 đối với giao dịch cổ phiếu, chứng chỉ quỹ, chứng quyền có bảo đảm đối với các trường hợp quy định tại điểm a, b, c, h, m khoản 1 Điều 40i Thông tư số 119/2020/TT-BTC.
+
+c) Chậm nhất 10h30 ngày thanh toán đối với trường hợp quy định tại điểm k khoản 1 Điều 40i Thông tư số 119/2020/TT-BTC.
+
+d) Chậm nhất 10h30 ngày thanh toán, ngày làm việc liền kề thứ nhất sau ngày thanh toán, ngày làm việc liền kề thứ hai sau ngày thanh toán hoặc ngày làm việc liền kề thứ ba sau ngày thanh toán đối với các trường hợp quy định tại điểm i, l khoản 1 Điều 40i Thông tư số 119/2020/TT-BTC.
+
+3. Đối với các giao dịch thiếu tiền phải loại bỏ thanh toán, TVLK phải gửi cho VSDC văn bản xác định các giao dịch thiếu tiền. Trường hợp VSDC không nhận được thông báo của TVLK trong thời hạn quy định tại khoản 2.2 Điều 6, khoản 2.2 Điều 7 Quy chế này, VSDC tự động xác định các giao dịch mua thiếu tiền để loại bỏ thanh toán theo cách thức sau:
+
+a) Tách riêng biệt các giao dịch mua theo từng loại khách hàng trong nước, khách hàng nước ngoài, tự doanh;
+
+b) Các giao dịch có bên đối ứng mua, bán cùng thành viên, cùng loại tài khoản (tự doanh, môi giới trong nước, môi giới nước ngoài) bị loại trừ khi xác định giao dịch loại bỏ thanh toán.
+
+c) Lấy các giao dịch mua có cùng ngày giao dịch, tổng giá trị thanh toán bằng hoặc cao hơn số tiền thiếu theo thứ tự thời gian xác lập từ dưới lên (kể từ thời điểm kết thúc phiên giao dịch).
+
+4. Sau khi loại bỏ thanh toán, VSDC gửi thông báo cho TVLK và SGDCK liên quan về việc loại bỏ thanh toán giao dịch chứng khoán.
+
+Chương IV
+GIÁM SÁT CỦA VSDC ĐỐI VỚI TVLK, TCMTKTT TRONG HOẠT ĐỘNG BÙ TRỪ, THANH TOÁN GIAO DỊCH CHỨNG KHOÁN
+
+Điều 18. Đối tượng, nội dung và phương thức giám sát
+1. Đối tượng giám sát
+
+VSDC thực hiện giám sát TVLK, TCMTKTT trong việc tuân thủ hoạt động bù trừ và thanh toán giao dịch chứng khoán theo quy định tại điểm c khoản 2 Điều 55 Luật Chứng khoán 2019; khoản 2 Điều 16, khoản 1 Điều 17 Thông tư số 95/2020/TT-BTC ngày 16/11/2020 của Bộ trưởng Bộ Tài chính hướng dẫn giám sát giao dịch chứng khoán trên thị trường chứng khoán và quy định tại hợp đồng, thoả thuận cung cấp dịch vụ đối với TCMTKTT.
+
+2. Nội dung giám sát
+
+a) Giám sát TVLK, TCMTKTT về hồ sơ, phương thức, trình tự, thời gian xác nhận kết quả giao dịch chứng khoán; xác nhận khả năng thanh toán tiền giao dịch chứng khoán; nộp hồ sơ sửa lỗi, xử lý lỗi, xác nhận phong tỏa tiền theo quy định tại Quy chế này.
+
+b) Giám sát TVLK, TCMTKTT về thời gian nộp tiền thanh toán giao dịch chứng khoán; về việc gửi thông báo cho VSDC kết quả phân bổ tiền, chứng khoán cho nhà đầu tư theo quy định tại Quy chế này.
+
+c) Giám sát TVLK trong việc đóng góp, sử dụng và hoàn trả tiền vay từ Quỹ hỗ trợ thanh toán theo quy định tại Điều 40l Thông tư số 119/2020/TT-BTC và Quy chế quản lý và sử dụng quỹ hỗ trợ thanh toán của VSDC.
+
+3. Phương thức giám sát
+
+VSDC giám sát việc tuân thủ các quy định liên quan đến hoạt động thanh toán giao dịch cổ phiếu, chứng chỉ quỹ, chứng quyền có bảo đảm, trái phiếu doanh nghiệp dựa trên:
+
+a) Hồ sơ, trình tự, thời gian, phương thức thực hiện các nghiệp vụ liên quan đến hoạt động bù trừ, thanh toán giao dịch chứng khoán.
+
+b) Báo cáo định kỳ, theo yêu cầu, bất thường từ TVLK, TCMTKTT.
+
+4. Trường hợp phát hiện vi phạm, VSDC thực hiện xử lý vi phạm theo quy định tại Quy chế TVLK (đối với TVLK) hoặc hợp đồng, thoả thuận cung cấp dịch vụ (đối với TCMTKTT). Trường hợp cần thiết, VSDC có văn bản yêu cầu TVLK, TCMTKTT giải trình, cung cấp thông tin để báo cáo, đề xuất Ủy ban Chứng khoán Nhà nước xem xét, xử lý theo thẩm quyền.
+
+Chương V
+
+TỔ CHỨC THỰC HIỆN
+
+Điều 19. Tổ chức thực hiện
+1. Trường hợp các văn bản quy phạm pháp luật, quy chế, quy định được dẫn chiếu trong Quy chế này được sửa đổi, bổ sung hoặc thay thế bằng các văn bản quy phạm pháp luật, quy chế, quy định mới thì áp dụng theo các văn bản quy phạm pháp luật, quy chế, quy định mới.
+
+2. Trong quá trình triển khai thực hiện, nếu có vướng mắc đề nghị các bên liên quan liên hệ với VSDC để được hướng dẫn, giải quyết.
+
+3. Việc sửa đổi, bổ sung Quy chế này do Hội đồng thành viên VSDC quyết định sau khi có ý kiến chấp thuận của Uỷ ban Chứng khoán Nhà nước.
+
+
+PHỤ LỤC 01
+Đăng ký, hủy đăng ký thông tin tài khoản lưu ký chứng khoán trên khu vực thị trường
+(Ban hành kèm theo Quy chế hoạt động bù trừ và thanh toán giao dịch chứng khoán)
+
+I. Quy trình đăng ký thông tin tài khoản lưu ký chứng khoán trên khu vực thị trường
+
+1. Sau khi đã thực hiện cập nhật thông tin mở tài khoản lưu ký chứng khoán của nhà đầu tư theo quy định tại Quy chế hoạt động lưu ký chứng khoán của VSDC, TVLK gửi VSDC điện MT598 - Yêu cầu đăng ký thông tin tài khoản lưu ký chứng khoán cho nhà đầu tư theo từng khu vực thị trường.
+
+2. VSDC gửi điện MT598 cho TVLK thông báo chấp nhận hoặc từ chối yêu cầu đăng ký thông tin tài khoản lưu ký chứng khoán cho nhà đầu tư theo khu vực thị trường.
+
+3. TVLK truy cập màn hình 2503 - Thông tin tài khoản chứng khoán giao dịch của nhà đầu tư theo khu vực thị trường để kiểm tra thông tin tài khoản đã được đăng ký và có hiệu lực theo từng khu vực thị trường.
+
+II. Quy trình hủy đăng ký thông tin tài khoản lưu ký chứng khoán trên khu vực thị trường
+
+1. TVLK gửi VSDC điện MT598 - Yêu cầu hủy đăng ký thông tin tài khoản giao dịch chứng khoán theo khu vực thị trường.
+
+2. VSDC gửi điện MT598 cho TVLK thông báo chấp nhận hoặc từ chối yêu cầu hủy đăng ký thông tin tài khoản lưu ký chứng khoán cho nhà đầu tư theo khu vực thị trường.
+
+3. TVLK truy cập màn hình 2503 - Thông tin tài khoản chứng khoán giao dịch của nhà đầu tư theo khu vực thị trường để kiểm tra thông tin tài khoản đã được hủy đăng ký và ghi nhận hết hiệu lực theo từng khu vực thị trường.
+
+
+PHỤ LỤC 02
+Danh mục chứng từ thanh toán, gửi qua cổng giao tiếp trực tuyến (FileAct)
+(Ban hành kèm theo Quy chế hoạt động bù trừ và thanh toán giao dịch chứng khoán)
+
+STT
+
+Chứng từ thanh toán
+
+1
+
+Thông báo kết quả giao dịch chứng khoán
+
+2
+
+Thông báo tài khoản bán thiếu chứng khoán
+
+3
+
+Thông báo giao dịch có thông tin tài khoản chưa được đăng ký khu vực thị trường
+
+4
+
+Thông báo tổng hợp kết quả bù trừ đa phương và thanh toán tiền
+
+5
+
+Thông báo tổng hợp kết quả bù trừ đa phương và thanh toán chứng khoán
+
+6
+
+Thông báo sửa lỗi sau giao dịch, xử lý lỗi giao dịch tự doanh
+
+7
+
+Thông báo lùi thời hạn thanh toán giao dịch chứng khoán
+
+8
+
+Thông báo loại bỏ thanh toán giao dịch chứng khoán
+
+PHỤ LỤC 03
+Phương thức, thời gian, trình tự, thủ tục bù trừ và thanh toán giao dịch chứng khoán
+(Ban hành kèm theo Quy chế hoạt động bù trừ và thanh toán giao dịch chứng khoán)
+
+A. ĐỐI VỚI TRÁI PHIẾU DOANH NGHIỆP
+I. Ngày T:
+1. Trong suốt phiên giao dịch:
+
+- TVLK, TCMTKTT có thể truy cập màn hình 3156, 3163 - Danh sách kết quả giao dịch và màn hình 3165 – Danh sách giao dịch có thông tin tài khoản chưa đăng ký vào khu vực thị trường (riêng NHLK, thông tin kết quả giao dịch được VSDC gửi theo thời gian thực dưới dạng điện MT586 - Yêu cầu xác nhận kết quả giao dịch), đối chiếu các giao dịch của mình, ghi nhận các sai sót (nếu có).
+
+- TVLK, TCMTKTT nhận thông tin nghĩa vụ thanh toán giao dịch chứng khoán tạm tính qua màn hình 4156.
+
+2. Từ 09h00-15h30:
+
+2.1. TVLK, TCMTKTT lập hồ sơ sửa lỗi, xử lý lỗi của CTCK như sau:
+
+2.1.1. Hồ sơ sửa lỗi:
+
+a) Giấy đề nghị sửa lỗi sau giao dịch (Mẫu 01A/TTBT kèm theo Quy chế này);
+
+b) Xác nhận kết quả giao dịch (Mẫu 02/TTBT kèm theo Quy chế này) trong đó CTCK xác nhận giao dịch của nhà đầu tư mở tài khoản lưu ký tại CTCK, NHLK xác nhận giao dịch của nhà đầu tư mở tài khoản lưu ký tại NHLK.
+
+c) Đối với lỗi liên quan đến nhà đầu tư mở tài khoản lưu ký tại NHLK sửa lỗi về tài khoản tự doanh của CTCK và NHLK thực hiện trước 15h30 ngày T:
+
+- NHLK từ chối thanh toán giao dịch chứng khoán, NHLK gửi VSDC điện MT530- xác nhận kết quả giao dịch hoặc truy cập màn hình 3163 - xác nhận kết quả giao dịch để thực hiện, hoặc;
+
+- NHLK phối hợp với CTCK để thực hiện: NHLK nhập giao dịch sửa lỗi qua cổng giao tiếp điện tử, cổng giao tiếp tuyến tại màn hình 3204, 3206; CTCK xác nhận tại màn hình 3206.
+
+2.1.2 Hồ sơ xử lý lỗi: CTCK có lỗi do nhập sai số hiệu tài khoản tự doanh gửi VSDC: Giấy đề nghị xử lý lỗi giao dịch tự doanh (Mẫu 01B/TTBT kèm theo Quy chế này)
+
+2.2. VSDC thực hiện sửa lỗi tự động đối với các giao dịch của nhà đầu tư có thông tin tài khoản lưu ký chưa được đăng ký trên khu vực thị trường theo quy định tại điểm b khoản 1 Điều 8 Quy chế này.
+
+2.3. Sau khi sửa lỗi, xử lý lỗi, VSDC gửi TVLK, TCMTKTT, SGDCK liên quan Thông báo sửa lỗi sau giao dịch (Mẫu 03A/TTBT kèm theo Quy chế này); Thông báo xử lý lỗi giao dịch tự doanh (Mẫu 03B/TTBT kèm theo Quy chế này) hoặc Thông báo dưới dạng chứng từ điện tử qua cổng giao tiếp trực tuyến/cổng giao tiếp điện tử. TVLK, TCMTKTT có thể truy cập màn hình 3406 để nhận thông tin.
+
+2.4. VSDC thực hiện loại bỏ thanh toán giao dịch theo quy định tại điểm a khoản 2 Điều 17 Quy chế này và gửi thông báo cho TVLK, TCMTKTT Thông báo loại bỏ thanh toán giao dịch chứng khoán (Mẫu 09/TTBT kèm theo Quy chế này); gửi điện MT598-Thông tin loại bỏ thanh toán giao dịch (kèm file csv). TVLK, TCMTKTT truy cập màn hình 3406 để nhận thông tin.
+
+3. Chậm nhất 15h15: VSDC xác định, thông báo nghĩa vụ thanh toán giao dịch chứng khoán tạm tính cho NHTT theo phương thức quy định tại Biên bản phối hợp hoạt động giữa VSDC và NHTT.
+
+4. Chậm nhất 15h30:
+
+a) CTCK, TCMTKTT phải có đủ tiền trên tài khoản tiền gửi thanh toán bù trừ giao dịch chứng khoán tại NHTT;
+
+b) TVLK, TCMTKTT gửi VSDC điện MT598 - thông báo xác nhận đủ tiền hoặc không đủ tiền thanh toán giao dịch chứng khoán. Trường hợp gửi sai nội dung xác nhận, TVLK, TCMTKTT gửi VSDC điện MT598 - thông báo hủy xác nhận đủ tiền hoặc không đủ tiền thanh toán giao dịch chứng khoán và thực hiện xác nhận lại.
+
+c) NHLK hoàn tất phong tỏa số tiền đã có tại NHLK, trường hợp không có đủ tiền thanh toán giao dịch chứng khoán, NHLK gửi VSDC xác nhận phong tỏa số tiền đã có và thông tin giao dịch thiếu tiền thanh toán (Mẫu 04B/TTBT kèm theo Quy chế này) để VSDC loại bỏ thanh toán.
+
+d) CTCK, TCMTKTT gửi VSDC thông tin chi tiết giao dịch thiếu tiền thanh toán (nếu có) (Mẫu 05/TTBT kèm theo Quy chế này).
+
+5. Chậm nhất 15h45: NHTT gửi VSDC văn bản xác nhận về việc đã phong tỏa đủ tiền hoặc phong tỏa số tiền đã có của CTCK, TCMTKTT và thông báo các trường hợp không đủ tiền để phong tỏa theo quy định (Mẫu 04A/TTBT kèm theo Quy chế này).
+
+6. Chậm nhất 16h00, VSDC thực hiện:
+
+- Loại bỏ thanh toán giao dịch trái phiếu doanh nghiệp thiếu tiền theo quy định tại điểm b khoản 2 Điều 17 Quy chế này và gửi Thông báo loại bỏ thanh toán giao dịch chứng khoán (Mẫu 09/TTBT kèm theo Quy chế này) cho TVLK, TCMTKTT, SGDCK liên quan.
+
+- Thực hiện chuyển chứng khoán từ tài khoản chứng khoán giao dịch sang tài khoản chứng khoán chờ thanh toán của nhà đầu tư. Đối với các tài khoản của nhà đầu tư không có đủ chứng khoán tại thời điểm này (theo quy định tại điểm d khoản 1 Điều 40đ Thông tư 119/2020/TT-BTC), VSDC thực hiện sửa lỗi về tài khoản tự doanh của TVLK. Sau khi sửa lỗi, VSDC gửi TVLK, TCMTKTT, SGDCK liên quan Thông báo sửa lỗi sau giao dịch (Mẫu 03A/TTBT kèm theo Quy chế này) hoặc Thông báo dưới dạng chứng từ điện tử qua cổng giao tiếp trực tuyến/cổng giao tiếp điện tử. TVLK, TCMTKTT có thể truy cập màn hình 3406 để nhận thông tin.
+
+- Xác định lại nghĩa vụ thanh toán cho TVLK, TCMTKTT có giao dịch sửa lỗi, xử lý lỗi, loại bỏ thanh toán thanh toán; gửi thông tin về nghĩa vụ thanh toán chứng khoán, thanh toán tiền cho TVLK, TCMTKTT tạm tính bằng điện MT598- nghĩa vụ thanh toán chứng khoán/tiền. TVLK, TCMTKTT truy cập từ màn hình 4151 đến 4156 để kiểm tra nghĩa vụ thanh toán chứng khoán, tiền.
+
+- Trên cơ sở nghĩa vụ thanh toán xác định lại, TVLK, TCMTKTT có nghĩa vụ phải trả tăng lên hoặc từ được nhận thành phải trả thực hiện việc phong tỏa tiền theo quy định.
+
+II. Ngày T+1:
+1. Chậm nhất 09h00: TVLK, TCMTKTT mất khả năng thanh toán chứng khoán phải hoàn tất việc vay chứng khoán.
+
+2. Từ 09h30 đến 10h30:
+
+- VSDC thực hiện xác định các giao dịch thiếu chứng khoán do sửa lỗi sau giao dịch hoặc xử lý lỗi giao dịch tự doanh nhưng không vay đủ chứng khoán trong thời gian quy định để thực hiện lùi thời hạn thanh toán theo trình tự quy định chi tiết tại mục C Phụ lục này.
+
+- VSDC gửi thông tin nghĩa vụ thanh toán chứng khoán, nghĩa vụ thanh toán tiền cho TVLK, TCMTKTT dưới dạng điện MT598- nghĩa vụ thanh toán chứng khoán/tiền. TVLK, TCMTKTT truy cập các màn hình 4451; 4452; 4453; 4454 để nhận thông tin nghĩa vụ thanh toán.
+
+3. Chậm nhất 10h30:
+
+- VSDC lập và gửi NHTT Kết quả tổng hợp bù trừ đa phương và thanh toán tiền thông qua màn hình 4461- Kết quả thanh toán gửi NHTT.
+
+- TVLK, TCMTKTT có đủ tiền trên tài khoản tiền gửi thanh toán bù trừ giao dịch chứng khoán (TK TG TTBT) của TVLK, TCMTKTT tại NHTT theo nghĩa vụ thanh toán do VSDC thông báo.
+
+4. Từ 10h30 - 11h00:
+
+- NHTT thực hiện kiểm tra số dư tiền trên TK TG TTBT của TVLK, TCMTKTT và gửi cho VSDC thông tin chi tiết các TVLK, TCMTKTT không đủ số dư tiền để thực hiện nghĩa vụ thanh toán (mất khả năng thanh toán tiền) ( Mẫu 10A/TTBT kèm theo Quy chế này).
+
+- Căn cứ vào đề nghị hỗ trợ tiền thanh toán giao dịch của VSDC (Mẫu 10B/TTBT kèm theo Quy chế này), NHTT thực hiện sử dụng tiền vay từ quỹ hỗ trợ thanh toán hoặc NHTT cho TVLK, TCMTKTT vay tiền để hỗ trợ thanh toán theo quy định tại Điều 13 Quy chế này.
+
+- VSDC gửi Thông báo sử dụng quỹ hỗ trợ thanh toán (Mẫu 10C/TTBT kèm theo Quy chế này) cho TVLK mất khả năng thanh toán.
+
+5. Từ 11h00 – 12h00, căn cứ vào các chứng từ thanh toán, NHTT và VSDC thực hiện các bước thanh toán sau:
+
+a) NHTT thực hiện:
+
+- Chuyển số tiền phải trả từ tài khoản tiền gửi TK TG TTBT (tài khoản môi giới, tự doanh) vào tài khoản tiền thanh toán bù trừ ròng của TVLK, TCMTKTT (TK TTBT TV).
+
+- Chuyển tiền (tổng thuần phải trả) từ TK TTBT TV sang tài khoản thanh toán bù trừ của VSDC mở tại NHTT (TK TG TTBT VSDC).
+
+b) VSDC thực hiện:
+
+- Chuyển số chứng khoán phải giao từ tài khoản chứng khoán chờ thanh toán của TVLK, TCMTKTT (tài khoản môi giới, tự doanh) vào tài khoản thanh toán bù trừ chứng khoán giao dịch của TVLK, TCMTKTT mở tại VSDC (TKCK TTBT TV).
+
+- Chuyển chứng khoán (tổng thuần phải trả) từ TKCK TTBT TV phải giao sang tài khoản thanh toán bù trừ chứng khoán của VSDC (TKCK TTBT VSDC).
+
+c) NHTT thực hiện:
+
+- Chuyển tiền (tổng thuần được nhận) từ TK TG TTBT VSDC sang TK TTBT TV của các TVLK, TCMTKTT được nhận.
+
+- Phân bổ số tiền tương ứng từ TK TTBT TV vào các TK TG TTBT (tài khoản môi giới, tự doanh) tại NHTT.
+
+d) VSDC thực hiện:
+
+- Chuyển chứng khoán (tổng thuần được nhận) từ TKCK TTBT VSDC vào các TKCK TTBT TV của TVLK, TCMTKTT được nhận.
+
+- Phân bổ số chứng khoán tương ứng từ TKCK TTBT TV vào TKCK GD TV (tài khoản tự doanh, môi giới) đồng thời ghi tăng TKCK GD của nhà đầu tư bên mua, ghi giảm TKCK GD của nhà đầu tư bên bán.
+
+đ) NHTT gửi văn bản xác nhận đã hoàn tất thanh toán (Mẫu 11/TTBT kèm theo Quy chế này) cho VSDC.
+
+6. Chậm nhất 12h00: VSDC gửi TVLK, TCMTKTT thông tin hoàn thành thanh toán giao dịch chứng khoán qua điện MT598- Thông báo hoàn thành thanh toán.
+
+7. Chậm nhất 13h00: TVLK phải hoàn tất việc phân bổ tiền và TPDN cho khách hàng sau khi VSDC hoàn tất thanh toán TPDN và NHTT hoàn tất thanh toán tiền.
+
+8. Chậm nhất 16h30, TVLK thông báo VSDC kết quả thực hiện phân bổ tiền và TPDN cho khách hàng thông qua điện MT598 - Thông báo xác nhận kết quả phân bổ tiền, chứng khoán cho nhà đầu tư. Trường hợp gửi sai nội dung xác nhận, TVLK gửi VSDC điện MT598 - Thông báo hủy xác nhận kết quả phân bổ tiền, chứng khoán cho nhà đầu tư và thực hiện xác nhận lại.
+
+B. ĐỐI VỚI CỔ PHIẾU, CHỨNG CHỈ QUỸ, CHỨNG QUYỀN CÓ BẢO ĐẢM
+I. Ngày T:
+1. Trong suốt phiên giao dịch:
+
+- TVLK, TCMTKTT có thể truy cập màn hình 3156, 3163 - Danh sách kết quả giao dịch và màn hình 3165 – Danh sách giao dịch có thông tin tài khoản chưa đăng ký vào khu vực thị trường (riêng NHLK, thông tin kết quả giao dịch được VSDC gửi theo thời gian thực dưới dạng điện MT586 - Yêu cầu xác nhận kết quả giao dịch), đối chiếu các giao dịch của mình, ghi nhận các sai sót (nếu có).
+
+- TVLK, TCMTKTT nhận thông tin nghĩa vụ thanh toán giao dịch chứng khoán tạm tính qua màn hình 4156.
+
+2. Từ 15h00 đến 15h30:
+
+2.1. TVLK, TCMTKTT lập hồ sơ sửa lỗi, xử lý lỗi của CTCK như sau:
+
+2.1.1. Hồ sơ sửa lỗi:
+
+a) Giấy đề nghị sửa lỗi sau giao dịch (Mẫu 01A/TTBT kèm theo Quy chế này);
+
+b) Xác nhận kết quả giao dịch (Mẫu 02/TTBT kèm theo Quy chế này) trong đó CTCK xác nhận giao dịch của nhà đầu tư mở tài khoản lưu ký tại CTCK, NHLK xác nhận giao dịch của nhà đầu tư mở tài khoản lưu ký tại NHLK.
+
+c) Đối với lỗi liên quan đến nhà đầu tư mở tài khoản lưu ký tại NHLK sửa lỗi về tài khoản tự doanh của CTCK và NHLK thực hiện trước 15h30 ngày T:
+
+- Trường hợp từ chối thanh toán giao dịch chứng khoán, NHLK gửi VSDC điện MT530- xác nhận kết quả giao dịch hoặc truy cập màn hình 3163 - xác nhận kết quả giao dịch để thực hiện;
+
+- Trường hợp phối hợp với CTCK để thực hiện sửa lỗi: NHLK nhập giao dịch sửa lỗi qua cổng giao tiếp điện tử, cổng giao tiếp tuyến tại màn hình 3204, 3206; CTCK xác nhận tại màn hình 3206.
+
+2.1.2. Hồ sơ xử lý lỗi:
+
+- CTCK có lỗi do nhập sai số hiệu tài khoản tự doanh gửi VSDC: Giấy đề nghị xử lý lỗi giao dịch tự doanh (Mẫu 01B/TTBT kèm theo Quy chế này).
+
+- CTCK, thành viên lập quỹ ETF có lỗi giao dịch tự doanh dẫn đến thiếu chứng khoán để thanh toán gửi VSDC: Giấy đề nghị xử lý lỗi giao dịch tự doanh (Mẫu 01C/TTBT kèm theo Quy chế này).
+
+2.2. VSDC thực hiện sửa lỗi tự động đối với các giao dịch của nhà đầu tư có thông tin tài khoản lưu ký chưa được đăng ký trên khu vực thị trường theo quy định tại điểm b khoản 1 Điều 8 Quy chế này.
+
+2.3. Sau khi sửa lỗi, xử lý lỗi, VSDC gửi TVLK, TCMTKTT, SGDCK liên quan Thông báo sửa lỗi sau giao dịch (Mẫu 03A/TTBT kèm theo Quy chế này); Thông báo xử lý lỗi giao dịch tự doanh (Mẫu 03B/TTBT kèm theo Quy chế này) hoặc Thông báo dưới dạng chứng từ điện tử qua cổng giao tiếp trực tuyến/cổng giao tiếp điện tử. TVLK, TCMTKTT có thể truy cập màn hình 3406 để nhận thông tin.
+
+2.4. VSDC thực hiện loại bỏ thanh toán giao dịch theo quy định tại điểm a khoản 2 Điều 17 Quy chế này và gửi thông báo cho TVLK, TCMTKTT Thông báo loại bỏ thanh toán giao dịch chứng khoán (Mẫu 09/TTBT kèm theo Quy chế này); gửi điện MT598-Thông tin loại bỏ thanh toán giao dịch (kèm file csv). TVLK, TCMTKTT truy cập màn hình 3406 để nhận thông tin.
+
+3. Chậm nhất 17h00, VSDC gửi thông tin tài khoản bán thiếu chứng khoán của nhà đầu tư cho TVLK, TCMTKTT dưới dạng điện MT598 - Thông tin tài khoản bán thiếu chứng khoán (kèm file csv) hoặc TVLK, TCMTKTT truy cập vào màn hình 4352 - Thông tin tài khoản bán thiếu chứng khoán để nhận thông tin.
+
+II. Ngày T+1:
+1. Từ 08h30-14h30:
+
+Tiếp tục sửa lỗi, xử lý lỗi, loại bỏ thanh toán giao dịch chứng khoán tương tự ngày T. Riêng đối với trường hợp NHLK từ chối thanh toán giao dịch chứng khoán (qua việc gửi điện MT530- xác nhận kết quả giao dịch hoặc thực hiện giao dịch tại màn hình 3163 - xác nhận kết quả giao dịch), NHLK, CTCK phối hợp gửi hồ sơ sửa lỗi và thực hiện giao dịch chậm nhất 08h30.
+
+2. Chậm nhất 15h00:
+
+a) VSDC xác định, thông báo nghĩa vụ thanh toán giao dịch chứng khoán tạm tính (lần 1) cho NHTT theo phương thức quy định tại Biên bản phối hợp hoạt động giữa VSDC và NHTT.
+
+b) CTCK, TCMTKTT phải có đủ tiền trên tài khoản tiền gửi thanh toán bù trừ giao dịch chứng khoán tại NHTT;
+
+c) TVLK gửi VSDC điện MT598 - thông báo xác nhận đủ tiền hoặc không đủ tiền thanh toán giao dịch chứng khoán theo quy định tại khoản 1 Điều 7 Quy chế này. Trường hợp gửi sai nội dung xác nhận, TVLK, TCMTKTT gửi VSDC điện MT598 - thông báo hủy xác nhận đủ tiền hoặc không đủ tiền thanh toán giao dịch chứng khoán và thực hiện xác nhận lại.
+
+d) NHLK hoàn tất phong tỏa số tiền đã có tại NHLK, trường hợp không có đủ tiền thanh toán giao dịch chứng khoán:
+
+- NHLK gửi VSDC xác nhận phong tỏa số tiền đã có và thông tin giao dịch thiếu tiền thanh toán (Mẫu 04B/TTBT kèm theo Quy chế này).
+
+- Gửi thông báo cho CTCK nơi NĐTNPR đặt lệnh (đồng thời thông báo cho VSDC) thông tin chi tiết giao dịch thiếu tiền (mã bảng giao dịch, số hiệu tài khoản, số hiệu lệnh, số xác nhận, mã cổ phiếu, số lượng cổ phiếu khớp lệnh, giá khớp lệnh, giá trị giao dịch, tổng sổ tiền đã phong tỏa tại NHLK, tổng số tiền CTCK còn phải phong tỏa) của NĐTNPR (nếu có), thông tin số tài khoản tiền gửi thanh toán bù trừ giao dịch chứng khoán môi giới nước ngoài của NHLK tại NHTT.
+
+đ) CTCK, TCMTKTT gửi VSDC thông tin chi tiết giao dịch thiếu tiền thanh toán (nếu có) (Mẫu 05/TTBT kèm theo Quy chế này) để VSDC loại bỏ thanh toán.
+
+3. Chậm nhất 15h15:
+
+a) NHTT thực hiện kiểm tra, phong tỏa tiền của CTCK, TCMTKTT và gửi xác nhận phong tỏa tiền (Mẫu 04A/TTBT kèm theo Quy chế này) cho VSDC:
+
+- Trường hợp đủ tiền: gửi xác nhận đã phong tỏa đủ tiền trên tài khoản tiền gửi thanh toán bù trừ giao dịch chứng khoán của CTCK, TCMTKTT.
+
+- Trường hợp không đủ tiền: gửi xác nhận đã phong tỏa số tiền đã có và thông báo các trường hợp không đủ tiền để phong tỏa của CTCK, TCMTKTT (lần 1).
+
+b) VSDC chuyển NHTT (Mẫu 06A/TTBT kèm theo Quy chế này) thông tin số tiền thiếu của NĐTNPR mở tài khoản lưu ký tại NHLK để NHTT đối chiếu, phong tỏa tiền theo đề nghị của CTCK đặt lệnh (nếu có).
+
+4. Chậm nhất 15h30:
+
+a) CTCK nơi NĐTNPR đặt lệnh phải có đủ tiền trên tài khoản tiền gửi của CTCK tại NHTT.
+
+b) VSDC thực hiện gửi thông báo nghĩa vụ thanh toán giao dịch chứng khoán tạm tính (lần 2) cho NHTT theo phương thức quy định tại Biên bản phối hợp hoạt động giữa VSDC và NHTT.
+
+5. Chậm nhất 15h45: NHTT gửi VSDC (Mẫu 04A/TTBT kèm theo Quy chế này) xác nhận phong tỏa, thông báo trường hợp không đủ tiền để phong tỏa (lần 2).
+
+6. Chậm nhất 16h00, VSDC thực hiện:
+
+- Loại bỏ thanh toán giao dịch cổ phiếu thiếu tiền theo quy định tại điểm b khoản 2 Điều 17 Quy chế này và gửi Thông báo loại bỏ thanh toán giao dịch chứng khoán (Mẫu 09/TTBT kèm theo Quy chế này) cho TVLK, TCMTKTT, SGDCK liên quan.
+
+- Thực hiện chuyển chứng khoán từ tài khoản chứng khoán giao dịch sang tài khoản chứng khoán chờ thanh toán của nhà đầu tư. Đối với các tài khoản của nhà đầu tư không có đủ cổ phiếu, chứng khoán tại thời điểm này (theo quy định tại điểm d khoản 1 Điều 40đ Thông tư 119/2020/TT-BTC), VSDC thực hiện sửa lỗi về tài khoản tự doanh của TVLK. Sau khi sửa lỗi, VSDC gửi TVLK, TCMTKTT, SGDCK liên quan Thông báo sửa lỗi sau giao dịch (Mẫu 03A/TTBT kèm theo Quy chế này) hoặc Thông báo dưới dạng chứng từ điện tử qua cổng giao tiếp trực tuyến/cổng giao tiếp điện tử. TVLK, TCMTKTT có thể truy cập màn hình 3406 để nhận thông tin.
+
+- Xác định lại nghĩa vụ thanh toán cho TVLK, TCMTKTT có giao dịch sửa lỗi, xử lý lỗi, loại bỏ thanh toán thanh toán; gửi thông tin về nghĩa vụ thanh toán chứng khoán, thanh toán tiền cho TVLK, TCMTKTT tạm tính bằng điện MT598- nghĩa vụ thanh toán chứng khoán/tiền. TVLK, TCMTKTT truy cập từ màn hình 4151 đến 4156 để kiểm tra nghĩa vụ thanh toán chứng khoán, tiền.
+
+- Trên cơ sở nghĩa vụ thanh toán xác định lại, TVLK, TCMTKTT có nghĩa vụ phải trả tăng lên hoặc từ được nhận thành phải trả thực hiện việc phong tỏa tiền theo quy định.
+
+III. Ngày T+2
+1. Chậm nhất 09h00: TVLK, TCMTKTT mất khả năng thanh toán chứng khoán phải hoàn tất việc vay chứng khoán.
+
+2. Chậm nhất 09h30: NHLK thiếu tiền thanh toán giao dịch của NĐTNPR (nếu có) gửi thông báo cho CTCK thông tin NĐTNPR không có đủ tiền thanh toán và CTCK đề nghị NHTT chuyển tiền thanh toán thay đồng thời thông báo cho VSDC theo quy định tại khoản 1 Điều 10 quy chế này.
+
+3. Chậm nhất 09h45:
+
+- VSDC chuyển thông tin số tiền thiếu của NHLK cho NHTT để đối chiếu với yêu cầu giải tỏa, chuyển tiền của CTCK đặt lệnh giao dịch của NĐTNPR (Mẫu 06B/TTBT kèm theo Quy chế này) ;
+
+- CTCK đặt lệnh giao dịch của NĐTNPR gửi NHTT yêu cầu giải tỏa tiền đã phong tỏa và chuyển về tài khoản tiền gửi thanh toán bù trừ giao dịch chứng khoán môi giới nước ngoài của NHLK để thanh toán giao dịch chứng khoán.
+
+4. Chậm nhất 10h15: CTCK, NHTT phải hoàn tất việc chuyển về tài khoản tiền gửi thanh toán bù trừ giao dịch chứng khoán môi giới nước ngoài của NHLK. NHTT gửi thông báo xác nhận đã hoàn tất việc chuyển tiền cho VSDC (Mẫu 06C/TTBT kèm theo Quy chế này).
+
+5. Từ 09h30 đến 10h30:
+
+- VSDC xác định các giao dịch thiếu chứng khoán do sửa lỗi sau giao dịch hoặc xử lý lỗi giao dịch tự doanh nhưng không vay đủ chứng khoán trong thời gian quy định và thực hiện lùi thời hạn thanh toán hoặc loại bỏ thanh toán (quy định chi tiết tại mục C Phụ lục này).
+
+- VSDC gửi thông tin nghĩa vụ thanh toán chứng khoán, và nghĩa vụ thanh toán tiền cho TVLK, TCMTKTT dưới dạng điện MT598 - Nghĩa vụ thanh toán chứng khoán/tiền hoặc TVLK, TCMTKTT truy cập các màn hình 4451; 4452; 4453; 4454 để nhận thông tin nghĩa vụ thanh toán.
+
+6. Chậm nhất 10h30:
+
+- VSDC lập và gửi cho NHTT Kết quả tổng hợp bù trừ đa phương và thanh toán tiền thông qua màn hình 4461- Kết quả thanh toán gửi NHTT.
+
+- TVLK, TCMTKTT có đủ tiền trên tài khoản tiền gửi thanh toán bù trừ giao dịch chứng khoán (TK TG TTBT) của TVLK, TCMTKTT tại NHTT theo kết quả bù trừ, thanh toán do VSDC thông báo.
+
+7. Từ 10h30 - 11h00:
+
+- NHTT thực hiện kiểm tra số dư tiền trên TK TG TTBT của TVLK, TCMTKTT và gửi cho VSDC thông tin chi tiết các TVLK, TCMTKTT không đủ số dư tiền để thực hiện nghĩa vụ thanh toán (mất khả năng thanh toán tiền) (Mẫu 10A/TTBT kèm theo Quy chế này).
+
+- Căn cứ vào đề nghị hỗ trợ tiền thanh toán giao dịch của VSDC (Mẫu 10B/TTBT kèm theo Quy chế này), NHTT thực hiện sử dụng tiền vay từ quỹ hỗ trợ thanh toán hoặc NHTT cho TVLK vay tiền để hỗ trợ thanh toán theo quy định tại Điều 13 Quy chế này.
+
+- VSDC gửi Thông báo sử dụng quỹ hỗ trợ thanh toán cho TVLK mất khả năng thanh toán (Mẫu 10C/TTBT kèm theo Quy chế này).
+
+8. Từ 11h00 - 12h00: Căn cứ vào các chứng từ thanh toán, NHTT và VSDC thực hiện các bước thanh toán sau:
+
+a) NHTT thực hiện:
+
+- Chuyển số tiền phải trả từ TK TG TTBT (tài khoản môi giới, tự doanh) vào tài khoản tiền thanh toán bù trừ ròng của TVLK, TCMTKTT (TK TTBT TV).
+
+- Chuyển tiền (tổng thuần phải trả) từ TK TTBT TV sang tài khoản thanh toán bù trừ của VSDC mở tại NHTT (TK TG TTBT VSDC).
+
+b) VSDC thực hiện:
+
+- Chuyển số chứng khoán phải giao từ tài khoản chứng khoán chờ thanh toán của TVLK, TCMTKTT (tài khoản môi giới, tự doanh) sang tài khoản thanh toán bù trừ chứng khoán giao dịch của TVLK, TCMTKTT mở tại VSDC (TKCK TTBT TV).
+
+- Chuyển chứng khoán (tổng thuần phải trả) từ TKCK TTBT TV phải giao sang tài khoản thanh toán bù trừ chứng khoán giao dịch của VSDC (TKCK TTBT VSDC).
+
+c) NHTT thực hiện:
+
+- Chuyển tiền (tổng thuần được nhận) từ TK TG TTBT VSDC sang TK TTBT TV của các TVLK, TCMTKTT được nhận.
+
+- Phân bổ số tiền tương ứng từ TK TTBT TV vào các TK TG TTBT (tài khoản môi giới, tự doanh) tại NHTT.
+
+d) VSDC thực hiện:
+
+- Chuyển chứng khoán (tổng thuần được nhận) từ TKCK TTBT VSDC vào các TKCK TTBT TV của TVLK, TCMTKTT được nhận.
+
+- Phân bổ số chứng khoán tương ứng từ TKCK TTBT TV vào TKCK GD TV (tài khoản tự doanh, môi giới) đồng thời ghi tăng TKCK GD của người đầu tư bên mua, ghi giảm TKCK GD của người đầu tư bên bán.
+
+đ) NHTT gửi văn bản xác nhận đã hoàn tất thanh toán (Mẫu 11/TTBT kèm theo Quy chế này) cho VSDC.
+
+6. Chậm nhất 12h00: VSDC gửi cho TVLK, TCMTKTT thông tin hoàn thành thanh toán giao dịch chứng khoán qua điện MT 598 - Thông báo hoàn thành thanh toán.
+
+7. Chậm nhất 13h00: TVLK phải hoàn tất việc phân bổ tiền và cổ phiếu, chứng chỉ quỹ, chứng quyền có bảo đảm cho khách hàng sau khi VSDC hoàn tất thanh toán cổ phiếu, chứng chỉ quỹ, chứng quyền có bảo đảm và NHTT hoàn tất thanh toán tiền.
+
+8. Chậm nhất 16h30, TVLK thông báo VSDC kết quả thực hiện phân bổ tiền và toán cổ phiếu, chứng chỉ quỹ, chứng quyền có bảo đảm cho khách hàng thông qua điện MT598 thông báo xác nhận kết quả phân bổ tiền, chứng khoán cho nhà đầu tư. Trường hợp gửi sai nội dung xác nhận, TVLK gửi VSDC điện MT598 - thông báo hủy xác nhận kết quả phân bổ tiền, chứng khoán cho nhà đầu tư và thực hiện xác nhận lại.
+
+C. TRÌNH TỰ LÙI THỜI HẠN THANH TOÁN, THANH TOÁN GIAO DỊCH BỊ LÙI THỜI HẠN THANH TOÁN; LOẠI BỎ THANH TOÁN GIAO DỊCH THIẾU CHỨNG KHOÁN TẠI NGÀY THANH TOÁN.
+1. Xác định giao dịch thiếu chứng khoán tại ngày thanh toán
+
+a) Từ 09h30-10h00: VSDC xác định tài khoản, số lượng, giá trị của giao dịch thiếu chứng khoán tại ngày thanh toán và gửi TVLK văn bản thông báo thiếu chứng khoán và yêu cầu TVLK, TCMTKTT xác định tài khoản mua đối ứng để ghép với tài khoản bán thiếu chứng khoán (Mẫu 07A/TTBT kèm theo Quy chế này).
+
+b) Chậm nhất 10h00 ngày thanh toán: TVLK, TCMTKTT thiếu chứng khoán xác định và gửi văn bản (Mẫu 07B/TTBT kèm theo Quy chế này) cho VSDC thông báo về tài khoản mua đối ứng ghép với tài khoản bán thiếu chứng khoán để VSDC tách giao dịch thiếu chứng khoán và thực hiện lùi thời hạn thanh toán hoặc loại bỏ thanh toán.
+
+c) Trường hợp TVLK, TCMTKTT không gửi hoặc gửi văn bản xác định tài khoản mua đối ứng không đúng thời hạn quy định, VSDC sẽ xác định tài khoản mua đối ứng theo quy định tại khoản 3 Điều 15 Quy chế này.
+
+2. Lùi thời hạn thanh toán, thanh toán giao dịch lùi thời hạn thanh toán; loại bỏ thanh toán giao dịch thiếu chứng khoán tại ngày thanh toán
+
+a) Chậm nhất 10h30 ngày thanh toán, VSDC thực hiện lùi thời hạn thanh toán theo quy định tại Điều 16 Quy chế này hoặc loại bỏ thanh toán theo quy định tại Điều 17 Quy chế này đối với giao dịch thiếu chứng khoán.
+
+b) VSDC gửi thông báo giao dịch lùi thời hạn thanh toán (Mẫu 08/TTBT kèm theo Quy chế này), thông báo loại bỏ thanh toán giao dịch (Mẫu 09/TTBT kèm theo Quy chế này) cho SGDCK, TVLK, TCMTKTT liên quan.
+
+c) TVLK, TCMTKTT nhận thông tin giao dịch lùi thời hạn thanh toán qua điện MT598 - Thông tin lùi thời hạn thanh toán do VSDC gửi hoặc truy cập màn hình 4453-4454 nhận thông tin thanh toán theo từng tài khoản hoặc theo TVLK, TCMTKTT.
+
+d) Giao dịch lùi thời hạn thanh toán được thực hiện cùng với các giao dịch có ngày thanh toán kế tiếp, cụ thể:
+
+ - Là ngày làm việc liền kề thứ nhất sau ngày thanh toán (T+2 đối với giao dịch trái phiếu doanh nghiệp; T+3 đối với giao dịch cổ phiếu, chứng chỉ quỹ, chứng quyền có bảo đảm);
+
+- Trường hợp tại ngày làm việc liền kề thứ nhất sau ngày thanh toán, TVLK không vay đủ chứng khoán để thanh toán, VSDC tiếp tục xác định chứng khoán thiếu theo quy trình trên, thời gian thực hiện tối đa đến ngày làm việc thứ 3 (ngày thanh toán T+4 đối với giao dịch trái phiếu doanh nghiệp; T+5 đối với giao dịch cổ phiếu, chứng chỉ quỹ, chứng quyền có bảo đảm).
+
+
+Chữ T trong các thuật ngữ trên được xuất phát từ “Transaction” nghĩa là “Ngày giao dịch”. Và các con số 1, 2, 3 được biểu hiện là ngày trong và sau ngày giao dịch. Chi tiết như sau: 
+T: Ngày giao dịch 
+T+1: Thanh toán sau 1 ngày so với ngày giao dịch
+T+2: Thanh toán sau 2 ngày so với ngày giao dịch
+T+3: Thanh toán sau 3 ngày so với ngày giao dịch
+Trong trường hợp các ngày T+1, T+2, T+3 rơi vào ngày Thứ 7, Chủ nhật, hoặc ngày lễ tết. Quý khách hàng vui lòng chờ lần lượt 1, 2, 3 ngày (không tính ngày nghỉ) để được thanh toán. 
+
+Ngày 19/08/2022, Tổng công ty Lưu ký và Bù trừ chứng khoán Việt Nam (VSDC) đã ban hành Quy chế hoạt động bù trừ và thanh toán giao dịch chứng khoán tại VSDC theo Quyết định số 109/QĐ-VSD và Quy chế Thành viên Lưu ký Tại VSDC theo Quyết định số 110/QĐ-VSD.
+
+Theo hai Quy chế trên, kể từ ngày 29/8/2022, nhà đầu tư có thể giao dịch chứng khoán ngay từ chiều ngày T+2 thay vì đợi đến ngày T+3 như giai đoạn từ ngày 29/8/2022 trở về trước. 
+
+Quý khách vui lòng xem hình ảnh minh hoạ dưới đây:
+
+Việc rút ngắn thời gian thanh toán giao dịch chứng khoán (cổ phiếu, chứng chỉ quỹ, chứng quyền có bảo đảm) từ T+3 xuống T+2 đem đến lợi ích tốt hơn cho nhà đầu tư và thị trường, với các kỳ vọng về tăng thanh khoản của thị trường và làm tăng vòng quay vốn, nhà đầu tư có nhiều lựa chọn cơ cấu danh mục. Bên cạnh đó, thời gian chờ chứng khoán hoặc tiền về tài khoản ngắn lại cũng giúp nhà đầu tư tiết kiệm chi phí, ví dụ như lãi Margin.
+
+Ngày Quý Khách hàng khớp lệnh mua chứng khoán được tính là ngày T. Chứng khoán sẽ về tài khoản chậm nhất là 13h ngày T+2. Như vậy, vào phiên giao dịch chiều ngày T+2, Quý khách hàng có thể bán được chứng khoán.
+
+Theo Quy chế của VSDC, ngày Quý Khách hàng khớp lệnh bán chứng khoán được tính là ngày T. Tiền sẽ về tài khoản chậm nhất là 13h00 ngày T+2, Quý khách hàng có thể rút tiền về tài khoản ngân hàng hoặc sử dụng để giao dịch.

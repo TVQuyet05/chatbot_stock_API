@@ -1,0 +1,134 @@
+version: '3.5'
+
+services:
+  # ── API Service ───────────────────────────────────────
+  api:
+    build: .
+    container_name: stock-law-api
+    ports:
+      - "8000:8000"
+    environment:
+      - MILVUS_HOST=standalone
+      - POSTGRES_HOST=postgres
+      - GEMINI_API_KEY=${GEMINI_API_KEY}
+    depends_on:
+      - standalone
+      - postgres
+    networks:
+      - stock-law
+
+  # ── PostgreSQL (Auth & Client DB) ─────────────────────
+  postgres:
+    image: postgres:15-alpine
+    container_name: stock-law-db
+    environment:
+      POSTGRES_USER: stocklaw
+      POSTGRES_PASSWORD: stocklaw_secret
+      POSTGRES_DB: stocklaw_auth
+    volumes:
+      - ./.volumes/postgres:/var/lib/postgresql/data
+    networks:
+      - stock-law
+
+  # ── Kong Gateway ──────────────────────────────────────
+  kong-db:
+    image: postgres:13-alpine
+    container_name: kong-db
+    environment:
+      POSTGRES_USER: kong
+      POSTGRES_DB: kong
+      POSTGRES_PASSWORD: kong
+    volumes:
+      - ./.volumes/kong-db:/var/lib/postgresql/data
+    networks:
+      - stock-law
+
+  kong-migrations:
+    image: kong:3.4.0
+    command: kong migrations bootstrap
+    environment:
+      KONG_DATABASE: postgres
+      KONG_PG_HOST: kong-db
+      KONG_PG_PASSWORD: kong
+    depends_on:
+      - kong-db
+    networks:
+      - stock-law
+
+  kong:
+    image: kong:3.4.0
+    container_name: kong-gateway
+    environment:
+      KONG_DATABASE: postgres
+      KONG_PG_HOST: kong-db
+      KONG_PG_PASSWORD: kong
+      KONG_PROXY_ACCESS_LOG: /dev/stdout
+      KONG_ADMIN_ACCESS_LOG: /dev/stdout
+      KONG_PROXY_ERROR_LOG: /dev/stderr
+      KONG_ADMIN_ERROR_LOG: /dev/stderr
+      KONG_ADMIN_LISTEN: 0.0.0.0:8001
+      KONG_DECLARATIVE_CONFIG: /usr/local/kong/declarative/kong.yml
+    volumes:
+      - ./kong/kong.yml:/usr/local/kong/declarative/kong.yml
+    ports:
+      - "8005:8000" # Mapping to avoid conflict with API direct port
+      - "8001:8001"
+    depends_on:
+      - kong-migrations
+    networks:
+      - stock-law
+
+  # ── Monitoring (Prometheus & Grafana) ─────────────────
+  prometheus:
+    image: prom/prometheus
+    container_name: prometheus
+    volumes:
+      - ./monitoring/prometheus.yml:/etc/prometheus/prometheus.yml
+    ports:
+      - "9090:9090"
+    networks:
+      - stock-law
+
+  # ── Milvus Stack (Existing) ───────────────────────────
+  etcd:
+    container_name: milvus-etcd
+    image: quay.io/coreos/etcd:v3.5.5
+    environment:
+      - ETCD_AUTO_COMPACTION_MODE=revision
+      - ETCD_AUTO_COMPACTION_RETENTION=1000
+    volumes:
+      - ./.volumes/etcd:/etcd
+    command: etcd -advertise-client-urls=http://127.0.0.1:2379 -listen-client-urls http://0.0.0.0:2379 --data-dir /etcd
+    networks:
+      - stock-law
+
+  minio:
+    container_name: milvus-minio
+    image: minio/minio:RELEASE.2023-03-20T20-16-18Z
+    environment:
+      MINIO_ACCESS_KEY: minioadmin
+      MINIO_SECRET_KEY: minioadmin
+    command: minio server /minio_data --console-address ":9001"
+    volumes:
+      - ./.volumes/minio:/minio_data
+    networks:
+      - stock-law
+
+  standalone:
+    container_name: milvus-standalone
+    image: milvusdb/milvus:v2.4.4
+    command: ["milvus", "run", "standalone"]
+    environment:
+      ETCD_ENDPOINTS: etcd:2379
+      MINIO_ADDRESS: minio:9000
+    volumes:
+      - ./.volumes/milvus:/var/lib/milvus
+    depends_on:
+      - etcd
+      - minio
+    networks:
+      - stock-law
+
+networks:
+  stock-law:
+    name: stock-law-network

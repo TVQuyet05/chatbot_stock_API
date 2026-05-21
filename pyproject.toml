@@ -1,0 +1,34 @@
+[project]
+name = "stock-law-api"
+version = "1.0.0"
+description = "Vietnamese Stock Law Advisory RAG API"
+authors = [
+    { name = "Antigravity", email = "antigravity@deepmind.google" }
+]
+dependencies = [
+    "fastapi>=0.110.0",
+    "uvicorn[standard]>=0.27.0",
+    "pydantic-settings>=2.2.1",
+    "sqlalchemy[asyncio]>=2.0.28",
+    "asyncpg>=0.29.0",
+    "python-jose[cryptography]>=3.3.0",
+    "passlib[bcrypt]>=1.7.4",
+    "python-multipart>=0.0.9",
+    "langchain>=0.1.11",
+    "langchain-community>=0.0.27",
+    "langchain-google-genai>=1.0.0",
+    "langchain-huggingface>=0.0.1",
+    "pymilvus>=2.3.6",
+    "sentence-transformers>=2.5.1",
+    "prometheus-client>=0.20.0",
+    "python-dotenv>=1.0.1",
+    "httpx>=0.27.0",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = "test_*.py"
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
