@@ -105,10 +105,24 @@ def ask_question(
     start = time.perf_counter()
 
     if rag_chain:
-        # Generate answer using the LCEL chain
-        answer = rag_chain.invoke(query)
-        # Manually retrieve source docs for the response metadata
-        source_docs = search_similar(vector_store, query, top_k=settings.TOP_K)
+        try:
+            # Generate answer using the LCEL chain
+            answer = rag_chain.invoke(query)
+            # Manually retrieve source docs for the response metadata
+            source_docs = search_similar(vector_store, query, top_k=settings.TOP_K)
+        except Exception as e:
+            logger.error("Gemini LLM error, falling back to retrieval-only: %s", e)
+            source_docs = search_similar(vector_store, query, top_k=settings.TOP_K)
+            if not source_docs:
+                answer = NO_CONTEXT_RESPONSE
+            else:
+                context = format_context(source_docs)
+                answer = (
+                    "⚠️ **Chế độ Tạm thời (LLM Fallback)**\n"
+                    "Hiện tại dịch vụ AI đang bận hoặc gặp lỗi quota. "
+                    "Dưới đây là các đoạn văn bản pháp luật liên quan trực tiếp đến câu hỏi của bạn:\n\n"
+                    f"{context}"
+                )
     else:
         source_docs = search_similar(vector_store, query, top_k=settings.TOP_K)
 
