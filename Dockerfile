@@ -12,7 +12,11 @@ WORKDIR /app
 
 # Copy requirements/pyproject
 COPY pyproject.toml .
-RUN pip install --no-cache-dir .
+
+# Optimize: Install CPU-only torch first to save ~1.5GB of space
+# Then install the rest of the project
+RUN pip install --no-cache-dir torch --index-url https://download.pytorch.org/whl/cpu && \
+    pip install --no-cache-dir .
 
 # Copy source code and data
 COPY src/ ./src/
