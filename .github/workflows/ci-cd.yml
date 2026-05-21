@@ -33,8 +33,13 @@ jobs:
           username: ${{ secrets.EC2_USERNAME }}
           key: ${{ secrets.EC2_SSH_KEY }}
           script: |
-            cd ~/stock-law-api || git clone https://github.com/${{ github.repository }} ~/stock-law-api
-            cd ~/stock-law-api
+            cd ~/chatbot_stock_API || git clone https://github.com/${{ github.repository }} ~/chatbot_stock_API
+            cd ~/chatbot_stock_API
             git pull origin main
+            # Re-create .env from secrets
             echo "GEMINI_API_KEY=${{ secrets.GEMINI_API_KEY }}" > .env
-            docker-compose up -d --build
+            echo "POSTGRES_USER=stocklaw" >> .env
+            echo "POSTGRES_PASSWORD=stocklaw_secret" >> .env
+            echo "POSTGRES_DB=stocklaw_auth" >> .env
+            echo "ADMIN_API_KEY=${{ secrets.ADMIN_API_KEY }}" >> .env
+            sudo docker-compose up -d --build
