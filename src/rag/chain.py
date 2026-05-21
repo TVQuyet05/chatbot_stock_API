@@ -43,9 +43,7 @@ def get_llm():
 
 def create_rag_chain(vector_store: Milvus):
     """
-    Build a RetrievalQA chain using the vector store and LLM.
-
-    Returns None if no LLM is available.
+    Build a RAG chain using LCEL (LangChain Expression Language).
     """
     llm = get_llm()
     if llm is None:
@@ -53,27 +51,37 @@ def create_rag_chain(vector_store: Milvus):
 
     settings = get_settings()
 
+    # 1. Setup Retriever
     retriever = vector_store.as_retriever(
         search_type="similarity",
         search_kwargs={"k": settings.TOP_K},
     )
 
+    # 2. Setup Prompt
     prompt = PromptTemplate(
         template=RAG_PROMPT_TEMPLATE,
         input_variables=["context", "question"],
     )
 
-    from langchain.chains import RetrievalQA
+    # 3. Create LCEL Chain
+    from langchain_core.runnables import RunnablePassthrough
+    from langchain_core.output_parsers import StrOutputParser
 
-    chain = RetrievalQA.from_chain_type(
-        llm=llm,
-        chain_type="stuff",
-        retriever=retriever,
-        return_source_documents=True,
-        chain_type_kwargs={"prompt": prompt},
+    def format_docs(docs):
+        return format_context(docs)
+
+    # This is the modern way to build RAG in LangChain
+    chain = (
+        {
+            "context": retriever | format_docs, 
+            "question": RunnablePassthrough()
+        }
+        | prompt
+        | llm
+        | StrOutputParser()
     )
 
-    logger.info("RAG chain ready")
+    logger.info("RAG LCEL chain ready")
     return chain
 
 
@@ -97,9 +105,10 @@ def ask_question(
     start = time.perf_counter()
 
     if rag_chain:
-        result = rag_chain.invoke({"query": query})
-        answer = result["result"]
-        source_docs = result.get("source_documents", [])
+        # Generate answer using the LCEL chain
+        answer = rag_chain.invoke(query)
+        # Manually retrieve source docs for the response metadata
+        source_docs = search_similar(vector_store, query, top_k=settings.TOP_K)
     else:
         source_docs = search_similar(vector_store, query, top_k=settings.TOP_K)
 
