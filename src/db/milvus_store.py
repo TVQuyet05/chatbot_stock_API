@@ -37,8 +37,10 @@ def create_milvus_store(
 
     # Ensure default pymilvus connection exists
     try:
-        existing = [alias for alias, _ in connections.list_connections()]
-        if "default" not in existing:
+        # Pymilvus requires an active connection for most utility/ORM calls
+        try:
+            connections.get_connection("default")
+        except Exception:
             connections.connect(
                 alias="default",
                 host=settings.MILVUS_HOST,
